@@ -4,22 +4,22 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
-## 📝 Lab Tasks  
+## 📝 Tasks  
 
 ### 🔹 1. Configuring a Domain Controller & Active Directory  
-✅ Installed and configured **Active Directory Domain Services (AD DS)** on Windows Server.  
+✅ Installing and configured **Active Directory Domain Services (AD DS)** on Windows Server.  
 ✅ Set up and promoted a **Domain Controller (DC)**.  
 ✅ Configured **DNS settings** for seamless Active Directory functionality.  
 
 ### 🔹 2. Creating & Managing Users  
-✅ Created and managed multiple **user accounts** in Active Directory.  
-✅ Organized users into **Organizational Units (OUs)** for structured management.  
-✅ Assigned **roles and permissions** to enforce security best practices.  
+✅ Creating and managagin multiple **user accounts** in Active Directory for real world scenarios.  
+✅ Organizing users into **Organizational Units (OUs)** for structured management.  
+✅ Assigning **roles and permissions** to enforce security best practices.  
 
 ### 🔹 3. Implementing Group Policies  
-✅ Created and applied **Group Policy Objects (GPOs)** to enforce organizational policies.  
-✅ Configured **password policies, user restrictions, and security settings**.  
-✅ Applied **desktop restrictions and security configurations** to enhance user management.  
+✅ Creating and Applying **Group Policy Objects (GPOs)** to enforce organizational policies.  
+✅ Configuring **password policies, user restrictions, and security settings**.  
+✅ Applying **desktop restrictions and security configurations** to enhance user management.  
 
 ---
 
