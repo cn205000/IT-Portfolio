@@ -86,24 +86,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-
----
-
-## 📚 What I Learned  
-
-💡 Gained hands-on experience in **Active Directory deployment** within a virtualized environment.  
-💡 Learned to **create and manage user accounts, groups, and OUs**.  
-💡 Developed **Group Policy Management** skills to enforce security settings and configurations.  
-
----
-
-## 🎯 Next Steps  
-
-🚀 Explore **Advanced Group Policy Management** for enhanced system control.  
-🚀 Automate user creation and group management using **PowerShell scripts**.  
-🚀 Gain experience integrating **Active Directory with Azure Active Directory (Azure AD)**.  
-
----
-
-This lab demonstrates my **real-world IT administration skills** and ability to **manage enterprise environments using Active Directory**. 🚀  
-
