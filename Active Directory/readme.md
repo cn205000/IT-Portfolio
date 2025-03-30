@@ -6,11 +6,11 @@ This repository showcases my hands-on experience with **Active Directory**, incl
 
 # 📂 Projects 📂
 
-🔹 [Configuring A DC & AD](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Configuring-DC-AD)
+⚙️ [Configuring A DC & AD](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Configuring-DC-AD)
 
-🔹 [Creating-Users](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Creating-Users)
+⚙️ [Creating-Users](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Creating-Users)
 
-🔹 [Managing Accounts & Group Policy](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Managing-Accounts-Group-Policy)
+⚙️ [Managing Accounts & Group Policy](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Managing-Accounts-Group-Policy)
 
 ---
 
