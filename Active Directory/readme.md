@@ -7,12 +7,12 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 ## 📝 Tasks  
 
 ### 🔹 1. Configuring a Domain Controller & Active Directory  
-✅ Installing and configured **Active Directory Domain Services (AD DS)** on Windows Server.  
-✅ Set up and promoted a **Domain Controller (DC)**.  
-✅ Configured **DNS settings** for seamless Active Directory functionality.  
+✅ Installing and configuring **Active Directory Domain Services (AD DS)** on Windows Server.  
+✅ Setting up and promoted a **Domain Controller (DC)**.  
+✅ Configuring **DNS settings** for seamless Active Directory functionality.  
 
 ### 🔹 2. Creating & Managing Users  
-✅ Creating and managagin multiple **user accounts** in Active Directory for real world scenarios.  
+✅ Creating and Managing multiple **user accounts** in Active Directory for real world scenarios.  
 ✅ Organizing users into **Organizational Units (OUs)** for structured management.  
 ✅ Assigning **roles and permissions** to enforce security best practices.  
 
@@ -23,7 +23,7 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
-## 🔗 Prerequisites   
+## 🔗 Enviroments & Technologies Used 
 
 
 ---
