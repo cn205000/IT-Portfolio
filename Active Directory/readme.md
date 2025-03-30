@@ -23,7 +23,7 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ## 📝 Tasks  
 
-### 🔹 1. Installing and configuring **Active Directory Domain Services (AD DS)** on Windows Server.  
+### 🔹 1. Installing and configuring **Active Directory & Domain Services (AD, DS)** on Windows Server.  
 
 ### 🔹 2. Creating and Managing multiple **user accounts** in Active Directory for real world scenarios. 
 
