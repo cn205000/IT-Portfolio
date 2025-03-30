@@ -1,4 +1,4 @@
-# ⚙️ Configuring A Domain Controller & Active Directory ⚙️
+# ⚙️ Configuring a Domain Controller & Active Directory ⚙️
 
 This repository showcases my hands-on experience with **Active Directory**, including setting up a **Domain Controller & Active Directory** Within a Server Enviroment
 
