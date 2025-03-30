@@ -23,6 +23,11 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
+## 🔗 Prerequisites   
+
+
+---
+
 ## 🖼 Screenshots  
 
 🔹 **Active Directory Setup** - Setting up the Domain Controller.  
@@ -45,13 +50,6 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 🚀 Explore **Advanced Group Policy Management** for enhanced system control.  
 🚀 Automate user creation and group management using **PowerShell scripts**.  
 🚀 Gain experience integrating **Active Directory with Azure Active Directory (Azure AD)**.  
-
----
-
-## 🔗 Resources  
-
-📖 [Microsoft Docs - Active Directory Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/)  
-🔗 [My LinkedIn Profile](https://www.linkedin.com/in/colby-nelson-330511303)  
 
 ---
 
