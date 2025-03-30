@@ -4,22 +4,9 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
-## 📝 Tasks  
+<h2>Video Demonstration</h2>
 
-### 🔹 1. Configuring a Domain Controller & Active Directory  
-✅ Installing and configuring **Active Directory Domain Services (AD DS)** on Windows Server.  
-✅ Setting up and promoted a **Domain Controller (DC)**.  
-✅ Configuring **DNS settings** for seamless Active Directory functionality.  
-
-### 🔹 2. Creating & Managing Users  
-✅ Creating and Managing multiple **user accounts** in Active Directory for real world scenarios.  
-✅ Organizing users into **Organizational Units (OUs)** for structured management.  
-✅ Assigning **roles and permissions** to enforce security best practices.  
-
-### 🔹 3. Implementing Group Policies  
-✅ Creating and Applying **Group Policy Objects (GPOs)** to enforce organizational policies.  
-✅ Configuring **password policies, user restrictions, and security settings**.  
-✅ Applying **desktop restrictions and security configurations** to enhance user management.  
+- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 ---
 
@@ -28,9 +15,19 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
-<h2>Video Demonstration</h2>
+<h2>Operating Systems Used </h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- Windows 10</b> (21H2)
+
+---
+
+## 📝 Tasks  
+
+### 🔹 1. Installing and configuring **Active Directory Domain Services (AD DS)** on Windows Server.  
+
+### 🔹 2. Creating and Managing multiple **user accounts** in Active Directory for real world scenarios. 
+
+### 🔹 3. Creating and Applying **Group Policy Objects (GPOs)** to enforce organizational policies. 
 
 ---
 
