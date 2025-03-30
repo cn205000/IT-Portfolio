@@ -1,4 +1,4 @@
-# 🏢 Active Directory Lab
+# 🏢 Active Directory
 
 This repository showcases my hands-on experience with **Active Directory (AD)**, including setting up a **Domain Controller (DC)**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
 
