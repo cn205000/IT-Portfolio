@@ -1,6 +1,6 @@
 # 🏢 Active Directory
 
-This repository showcases my hands-on experience with **Active Directory (AD)**, including setting up a **Domain Controller (DC)**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
+This repository showcases my hands-on experience with **Active Directory**, including setting up a **Domain Controller**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
 
 ---
 
