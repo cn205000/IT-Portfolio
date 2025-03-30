@@ -1,40 +1,58 @@
-# Active Directory Lab
+# 🏢 Active Directory Lab
 
-This folder contains tasks and activities I completed as part of the **Active Directory Lab**.
+This repository showcases my hands-on experience with **Active Directory (AD)**, including setting up a **Domain Controller (DC)**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
 
-## 📝 Tasks
+---
 
-### 1. **Configuring a Domain Controller & Active Directory**  
-   - Installed and configured **Active Directory Domain Services (AD DS)** on Windows Server.  
-   - Set up and configured a **Domain Controller (DC)**.  
-   - Configured **DNS** for Active Directory functionality.
+## 📝 Lab Tasks  
 
-### 2. **Creating Users**  
-   - Created multiple **user accounts** in Active Directory.  
-   - Assigned **roles and permissions** to users and created **organizational units (OUs)**.
+### 🔹 1. Configuring a Domain Controller & Active Directory  
+✅ Installed and configured **Active Directory Domain Services (AD DS)** on Windows Server.  
+✅ Set up and promoted a **Domain Controller (DC)**.  
+✅ Configured **DNS settings** for seamless Active Directory functionality.  
 
-### 3. **Managing Group Policies**  
-   - Created and applied **Group Policy Objects (GPOs)** to enforce organizational policies.  
-   - Configured password policies, user restrictions, and security settings.
+### 🔹 2. Creating & Managing Users  
+✅ Created and managed multiple **user accounts** in Active Directory.  
+✅ Organized users into **Organizational Units (OUs)** for structured management.  
+✅ Assigned **roles and permissions** to enforce security best practices.  
 
-## 🖼 Screenshots
+### 🔹 3. Implementing Group Policies  
+✅ Created and applied **Group Policy Objects (GPOs)** to enforce organizational policies.  
+✅ Configured **password policies, user restrictions, and security settings**.  
+✅ Applied **desktop restrictions and security configurations** to enhance user management.  
 
-![Active Directory Setup](./screenshots/active-directory-setup.png)  
-*Setting up the Domain Controller.*
+---
 
-![Active Directory Users](./screenshots/ad-users.png)  
-*Creating users in Active Directory.*
+## 🖼 Screenshots  
 
-## 🔗 Resources
+🔹 **Active Directory Setup** - Setting up the Domain Controller.  
+🔹 **Active Directory Users** - Creating users in Active Directory.  
 
-- [Microsoft Docs - Active Directory Overview](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-domain-services)
-- [LinkedIn Profile](https://www.linkedin.com/in/colby-nelson-330511303)
+*(Screenshots will be added here for visual representation.)*  
 
-## 📚 What I Learned
-- Gained hands-on experience in **setting up and configuring Active Directory** in a virtualized environment.  
-- Learned to create and manage **user accounts, groups, and organizational units**.  
-- Developed skills in **Group Policy Management** and enforcing security through GPOs.
+---
 
-## 🏁 Next Steps
-In future projects, I plan to explore **Advanced Group Policy Management** and automation using **PowerShell scripts**.
+## 📚 What I Learned  
 
+💡 Gained hands-on experience in **Active Directory deployment** within a virtualized environment.  
+💡 Learned to **create and manage user accounts, groups, and OUs**.  
+💡 Developed **Group Policy Management** skills to enforce security settings and configurations.  
+
+---
+
+## 🎯 Next Steps  
+
+🚀 Explore **Advanced Group Policy Management** for enhanced system control.  
+🚀 Automate user creation and group management using **PowerShell scripts**.  
+🚀 Gain experience integrating **Active Directory with Azure Active Directory (Azure AD)**.  
+
+---
+
+## 🔗 Resources  
+
+📖 [Microsoft Docs - Active Directory Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/)  
+🔗 [My LinkedIn Profile](https://www.linkedin.com/in/colby-nelson-330511303)  
+
+---
+
+This lab
