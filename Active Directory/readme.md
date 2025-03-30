@@ -55,4 +55,4 @@ This repository showcases my hands-on experience with **Active Directory (AD)**,
 
 ---
 
-This lab
+This lab demonstrates my **real-world IT administration skills** and ability to **manage enterprise environments using Active Directory**. 🚀  
