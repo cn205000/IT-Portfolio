@@ -3,6 +3,14 @@
 This repository showcases my hands-on experience with **Active Directory**, including setting up a **Domain Controller**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
 
 ---
+# 📂 Projects 📂
+
+[Configuring A DC & AD](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Configuring-DC-AD)
+
+
+
+
+---
 
 ## 📝 Tasks  
 
