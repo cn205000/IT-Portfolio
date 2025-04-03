@@ -21,7 +21,7 @@
 
 <h1>Installation Steps</h1>
 
-## Step 1: Create a Resource Group  
+# Step 1: Create a Resource Group  
 
 1. In the **Azure Portal**, go to **Resource Groups**.  
 2. Click **+ Create** and name it `Azure-DC-Setup`.  
@@ -34,7 +34,7 @@
 
 
 
-## Step 2: Create a Virtual Network (VNET)  
+# Step 2: Create a Virtual Network (VNET)  
 
 1. On the Azure Portal, go to **Virtual Networks** & hit create.
 2. Ensure the VNET is created under the correct **Resource Group**.  
@@ -47,7 +47,7 @@
 
 
 
-## Step 3: Create the Domain Controller (DC)  
+# Step 3: Create the Domain Controller (DC)  
 
 1. Under the Azure Portal, go to **Virtual Machines**.
 2. **Create a Virtual Machine (VM)** under the same **Resource Group**.  
