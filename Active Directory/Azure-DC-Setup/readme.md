@@ -20,6 +20,10 @@
 ---
 
 <h2>Installation Steps</h2>
+<p>
+<h1>Create Resource Group</h1>
+</p>
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
