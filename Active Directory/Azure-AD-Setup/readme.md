@@ -1,18 +1,20 @@
-# ⚙️ Configuring a Domain Controller & Active Directory ⚙️
+# ☁️ Azure AD Setup Guide
 
-This repository showcases my hands-on experience with **Active Directory**, including setting up a **Domain Controller & Active Directory** Within a Server Enviroment
-
+This project walks through setting up **Azure Active Directory (Azure AD)**, adding users, and managing security policies in Microsoft Azure.
 ---
-
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 ---
+## 📌 Prerequisites
+° **Azure subscription** (Free or Paid)
+° Access To **RDP**
 
+---
 ## 🔗 Enviroments & Technologies Used 
-
-
+°  **Azure**
+° **Remote Desktop Protocol**
 ---
 
 <h2>Operating Systems Used </h2>
