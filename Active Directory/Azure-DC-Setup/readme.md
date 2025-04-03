@@ -19,9 +19,9 @@
 
 ---
 
-<h2>Installation Steps</h2>
+<h1>Installation Steps</h1>
 <p>
-<h1>Create Resource Group</h1>
+<h2>Create Resource Group</h2>
 </p>
 
 
