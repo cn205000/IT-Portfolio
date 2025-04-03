@@ -1,6 +1,6 @@
 # ☁️ Azure AD Setup Guide
 
-This project walks through setting up **Azure Active Directory (Azure AD)**, adding users, and managing security policies in Microsoft Azure.
+This project walks through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
 <h2>Video Demonstration</h2>
 
