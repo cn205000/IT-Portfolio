@@ -20,9 +20,6 @@
 ---
 
 <h1>Installation Steps</h1>
-<p>
-<h2>Create Resource Group</h2>
-</p>
 
 ## Step 1: Create a Resource Group  
 
