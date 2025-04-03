@@ -32,7 +32,7 @@
 4. Click **Review + Create**, then **Create**.  
 
 <p>
-<img src="https://imgur.com/ALp3vCX.png" height="20%" width="30%">
+<img src="https://imgur.com/ALp3vCX.png" height="50%" width="50%">
 </p>
 
 <br />
