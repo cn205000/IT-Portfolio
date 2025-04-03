@@ -70,7 +70,7 @@
 2. Name the VM **Client** and ensure it is in the **same region & zone**.  
 3. Select the OS version: **Windows 10 Pro 22H2**.  
 4. Choose a size of **2 vCPUs** (adjust based on workload).  
-5. **Create login credentials** & check off the licencing box (For better security, avoid weak passwords and document strong credentials).  
+5. **Create login credentials** & **check off the licencing box** (For better security, avoid weak passwords and document strong credentials).  
 6. Navigate to **Networking** and ensure the VM is on the newly created **VNET**.  
 7. Click **Create** to deploy the Client VM.  
 
