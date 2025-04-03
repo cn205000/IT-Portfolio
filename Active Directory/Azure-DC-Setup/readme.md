@@ -77,3 +77,22 @@
 <p>
 <img src="https://imgur.com/CO3c8ik.png" height="20%" width="50%" alt="Client-VM Creation">
 </p>
+
+
+
+
+# Step 5: Change Domain Controller's NIC to Static  
+
+1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
+2. Click on **Networking** > **Network Settings**.  
+3. Click on the **NIC** at the top (labeled **Network Interface**).  
+4. Click on **ipconfig** and change the Private IP address setting from **Dynamic** to **Static**.  
+5. Click **Save** to apply the changes.  
+
+<p>
+<img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
+</p>
+
+
+
+
