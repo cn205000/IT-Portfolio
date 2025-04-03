@@ -8,13 +8,13 @@ This project walks through setting up a VNET & VM's for a Domain Controller & a 
 
 ---
 ## 📌 Prerequisites
-° **Azure subscription** (Free or Paid)
-° Access To **RDP**
+- **Azure subscription** (Free or Paid)
+- Access To **RDP**
 
 ---
 ## 🔗 Enviroments & Technologies Used 
-°  **Azure**
-° **Remote Desktop Protocol**
+-  **Azure**
+- **Remote Desktop Protocol**
 ---
 
 <h2>Operating Systems Used </h2>
