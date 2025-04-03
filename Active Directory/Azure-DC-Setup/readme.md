@@ -85,7 +85,7 @@
 
 1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
 2. Click on **Networking** > **Network Settings**.  
-3. Click on the **NIC** at the top (labeled **Network Interface**).  
+3. Click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
 4. Click on **ipconfig** and change the Private IP address setting from **Dynamic** to **Static**.  
 5. Click **Save** to apply the changes.  
 
