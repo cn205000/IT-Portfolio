@@ -9,7 +9,7 @@
 
 ## 📌 Prerequisites
 - **Azure subscription** (Free or Paid)
-- 
+  
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 
