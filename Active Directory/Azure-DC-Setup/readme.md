@@ -32,7 +32,7 @@
 <img src="https://imgur.com/ALp3vCX.png" height="65%" width="65%" alt="RG Creation">
 </p>
 
-
+<br>
 
 # Step 2: Create a Virtual Network (VNET)  
 
