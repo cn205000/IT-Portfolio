@@ -24,10 +24,10 @@
 <h2>Create Resource Group</h2>
 </p>
 <p>
-<img src="https://imgur.com/MIJIqBP.png" height="80%" width="80%">
+<img src="https://imgur.com/MIJIqBP.png" height="40%" width="50%">
 </p>
 <p>
-## Step 1: Create a Resource Group  
+**Step 1:** Create a Resource Group  
 1. In the **Azure Portal**, go to **Resource Groups**.  
 2. Click **+ Create** and name it `Azure-DC-Setup`.  
 3. Choose the correct **region** (Make sure all resources match this region).  
