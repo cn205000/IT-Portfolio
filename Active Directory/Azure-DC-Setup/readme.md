@@ -9,7 +9,6 @@
 
 ## 📌 Prerequisites
 - **Azure subscription** (Free or Paid)
-- Access To **RDP**
 
 
 ## 🔗 Enviroments & Technologies Used 
