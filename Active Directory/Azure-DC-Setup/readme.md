@@ -19,7 +19,7 @@
 
 ---
 
-<h3>Installation Steps</h3>
+# *Installation Steps*
 
 # Step 1: Create a Resource Group  
 
