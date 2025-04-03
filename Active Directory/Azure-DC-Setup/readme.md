@@ -24,7 +24,7 @@
 <h2>Create Resource Group</h2>
 </p>
 <p>
-<img src="https://imgur.com/MIJIqBP.png" height="40%" width="50%">
+<img src="https://imgur.com/MIJIqBP.png" height="40%" width="60%">
 </p>
 <p>
 **Step 1:** Create a Resource Group  
