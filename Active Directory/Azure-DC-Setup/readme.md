@@ -34,6 +34,8 @@
 
 <br>
 
+</br>
+
 # Step 2: Create a Virtual Network (VNET)  
 
 1. On the Azure Portal, go to **Virtual Networks** & hit create.
