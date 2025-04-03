@@ -6,7 +6,7 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
----
+
 ## 📌 Prerequisites
 - **Azure subscription** (Free or Paid)
 - Access To **RDP**
@@ -16,10 +16,6 @@
 -  **Azure**
 - **Remote Desktop Protocol**
 
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (21H2)
 
 ---
 
