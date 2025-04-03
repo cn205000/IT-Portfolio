@@ -62,3 +62,18 @@
 <img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="VNET Creation">
 </p>
 
+
+
+# Step 4: Create the Client VM  
+
+1. **Create a new Virtual Machine (VM)** under the same **Resource Group**.  
+2. Name the VM **Client** and ensure it is in the **same region & zone**.  
+3. Select the OS version: **Windows 10 Pro 22H2**.  
+4. Choose a size of **2 vCPUs** (adjust based on workload).  
+5. **Create login credentials** & check off the licencing box (For better security, avoid weak passwords and document strong credentials).  
+6. Navigate to **Networking** and ensure the VM is on the newly created **VNET**.  
+7. Click **Create** to deploy the Client VM.  
+
+<p>
+<img src="https://imgur.com/CO3c8ik" height="20%" width="50%" alt="VNET Creation">
+</p>
