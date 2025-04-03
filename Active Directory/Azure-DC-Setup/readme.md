@@ -35,6 +35,8 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
 # Step 2: Create a Virtual Network (VNET)  
 
@@ -47,7 +49,11 @@
 <img src="https://imgur.com/rjS0CS4.png" height="50%" width="50%" alt="VNET Creation">
 </p>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Step 3: Create the Domain Controller (DC)  
 
@@ -64,7 +70,11 @@
 <img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="DC Creation">
 </p>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Step 4: Create the Client VM  
 
@@ -80,8 +90,11 @@
 <img src="https://imgur.com/CO3c8ik.png" height="20%" width="50%" alt="Client-VM Creation">
 </p>
 
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Step 5: Change Domain Controller's NIC to Static  
 
@@ -95,7 +108,11 @@
 <img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
 </p>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Step 6: Change Client's DNS Server IP to Domain Controller's Private IP
 
