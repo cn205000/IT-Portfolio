@@ -1,4 +1,4 @@
-# ☁️ Azure AD Setup Guide
+# ☁️ Azure-DC-Setup
 
 This project walks through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
