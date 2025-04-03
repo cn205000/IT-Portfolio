@@ -59,7 +59,7 @@
 8. Click **Create** to deploy the Domain Controller.  
 
 <p>
-<img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="VNET Creation">
+<img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="DC Creation">
 </p>
 
 
@@ -75,5 +75,5 @@
 7. Click **Create** to deploy the Client VM.  
 
 <p>
-<img src="https://imgur.com/CO3c8ik" height="20%" width="50%" alt="VNET Creation">
+<img src="https://imgur.com/CO3c8ik.png" height="20%" width="50%" alt="Client-VM Creation">
 </p>
