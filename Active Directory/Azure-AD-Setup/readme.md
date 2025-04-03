@@ -11,21 +11,15 @@ This project walks through setting up a VNET & VM's for a Domain Controller & a 
 - **Azure subscription** (Free or Paid)
 - Access To **RDP**
 
----
+
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 - **Remote Desktop Protocol**
----
+
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
-
----
-
-## 📝 Task
-
-### 🔹 Installing and configuring **Active Directory & Domain Services (AD, DS)** on Windows Server.  
 
 ---
 
