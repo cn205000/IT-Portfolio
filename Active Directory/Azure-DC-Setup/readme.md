@@ -14,7 +14,6 @@
 
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
-- **Remote Desktop Protocol**
 
 
 ---
