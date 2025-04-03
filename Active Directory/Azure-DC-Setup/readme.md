@@ -55,10 +55,10 @@
 4. Select the OS version: **Windows Server Datacenter 2022 Hotpatch**.  
 5. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
 6. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
-7. Navigate to **Networking** and ensure the VM is on the newly created **VNET**.  
+7. ***Navigate*** to **Networking** and **ensure** this VM is on the newly created **VNET**.  
 8. Click **Create** to deploy the Domain Controller.  
 
 <p>
-<img src="https://imgur.com/K5tdnW3.png" height="30%" width="50%" alt="VNET Creation">
+<img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="VNET Creation">
 </p>
 
