@@ -33,16 +33,8 @@
 </p>
 
 <br>
-
-
-
-
-
-
-
-
-
-</br>
+<br>
+<br>
 
 # Step 2: Create a Virtual Network (VNET)  
 
