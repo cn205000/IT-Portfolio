@@ -52,7 +52,7 @@
 1. Under the Azure Portal, go to **Virtual Machines**.
 2. **Create a Virtual Machine (VM)** under the same **Resource Group**.  
 3. Name the VM **Domain-Controller** and ensure it is in the **same region & zone**.  
-4. Select the OS version: **Windows Server Datacenter 2022 Hotpatch**.  
+4. Select the OS version: **Windows Server 2022 Datacenter Hotpatch x64 Gen2**.  
 5. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
 6. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
 7. ***Navigate*** to **Networking** and **ensure** this VM is on the newly created **VNET**.  
