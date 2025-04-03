@@ -32,7 +32,7 @@
 <img src="https://imgur.com/ALp3vCX.png" height="65%" width="65%" alt="RG Creation">
 </p>
 
-<br />
+
 
 ## Step 2: Create a Virtual Network (VNET)  
 
@@ -47,50 +47,18 @@
 
 
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Step 3: Create the Domain Controller (DC)  
+
+1. Under the Azure Portal, go to **Virtual Machines**.
+2. **Create a Virtual Machine (VM)** under the same **Resource Group**.  
+3. Name the VM **Domain-Controller** and ensure it is in the **same region & zone**.  
+4. Select the OS version: **Windows Server Datacenter 2022 Hotpatch**.  
+5. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
+6. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
+7. Navigate to **Networking** and ensure the VM is on the newly created **VNET**.  
+8. Click **Create** to deploy the Domain Controller.  
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/K5tdnW3.png" height="30%" width="50%" alt="VNET Creation">
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
