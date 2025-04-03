@@ -24,7 +24,7 @@
 <h2>Create Resource Group</h2>
 </p>
 <p>
-<img src="https://imgur.com/MIJIqBP" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/MIJIqBP" height="80%" width="80%"/>
 </p>
 <p>
 ## Step 1: Create a Resource Group  
