@@ -2,7 +2,7 @@
 
 This project walks through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
-<h3>Video Demonstration</h3>
+# Video Demonstration
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
