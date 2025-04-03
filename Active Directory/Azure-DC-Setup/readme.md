@@ -9,12 +9,10 @@
 
 ## 📌 Prerequisites
 - **Azure subscription** (Free or Paid)
-
-
+<br>
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 <br>
-
 # *Installation Steps*
 
 # Step 1: Create a Resource Group  
