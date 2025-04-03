@@ -1,6 +1,4 @@
-<p align="center">
-<h1>☁️ Azure-DC-Setup</h1>
-</p>
+# ☁️ Azure-DC-Setup
 
 ### This project walks through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
