@@ -7,11 +7,6 @@
 - [ ] Generating a Domain Controller & Client VM
 - [ ] Configuring VM Settings for Domain use
 
----
-## 🎥 Video Demonstration
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 
 ## 📌 Prerequisites
 - 🔐 Microsoft Azure Account (Free or Paid)
@@ -20,6 +15,10 @@
   
 ## 🔗 Enviroments & Technologies Used 
 -  **Microsoft Azure**
+
+## 🎥 Video Demonstration
+
+- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 # *Installation Steps*
 
