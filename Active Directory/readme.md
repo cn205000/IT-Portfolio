@@ -1,43 +1,50 @@
-# 🏢 Active Directory
+# 🏢 **Active Directory Portfolio**  
 
-This repository showcases my hands-on experience with **Active Directory**, including setting up a **Domain Controller**, **managing users**, and **configuring Group Policies** in a Windows Server environment.
+## 🔹 Showcasing Enterprise-Level AD Deployments & Management  
 
----
+Welcome to my **Active Directory Portfolio**! I demonstrate hands-on experience in designing, implementing, and managing **Active Directory (AD) environments** and its prerequisites! 
 
-# 📂 Projects 📂
-
-⚙️ [Configuring A DC & AD](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Configuring-DC-AD)
-
-⚙️ [Creating-Users](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Creating-Users)
-
-⚙️ [Managing Accounts & Group Policy](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Managing-Accounts-Group-Policy)
+My projects below contain step-by-step guides and configurations for setting up and managing **Active Directory, Group Policy, User Management, and more!**  
 
 ---
 
-## 📝 Tasks  
+## 📌 **Projects in this Repository**  
 
-### 🔹 1. Installing and configuring **Active Directory & Domain Services (AD, DS)** on Windows Server.  
+### 1️⃣ [Azure Domain Setup](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Azure-Domain-Setup)    *(Click to View)*  
+- 🔹 Deploying an **Active Directory Domain Services (AD DS) environment** on **Azure Virtual Machines**  
+- 🔹 Configuring **VNETs, DNS, Static IPs, and Firewall Rules**  
+- 🔹 Joining a **Windows Client VM to the Domain**  
 
-### 🔹 2. Creating and Managing multiple **user accounts** in Active Directory for real world scenarios. 
+### 2️⃣ [**Active Directory Domain Setup**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-DomainSetup) *(Click to View)*  
+- 🔹 Setting up a **Domain Controller** on a **local Virtual Machine (VM)**  
+- 🔹 Creating **Organizational Units (OUs) and Security Groups**  
+- 🔹 Configuring **Group Policy Objects (GPOs) for network-wide management**  
 
-### 🔹 3. Creating and Applying **Group Policy Objects (GPOs)** to enforce organizational policies. 
+### 3️⃣ [**Active Directory User Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-UserManagement) *(Click to View)*  
+- 🔹 Automating **User & Group Management** using **PowerShell scripts**  
+- 🔹 Implementing **Group Policies (GPOs) to enforce security policies**  
+- 🔹 Managing **permissions & access control lists (ACLs)** efficiently  
 
----
-
-## 📚 What I Learned  
-
-💡 Gained hands-on experience in **Active Directory deployment** within a virtualized environment.  
-💡 Learned to **create and manage user accounts, groups, and OUs**.  
-💡 Developed **Group Policy Management** skills to enforce security settings and configurations.  
-
----
-
-## 🎯 Next Steps  
-
-🚀 Explore **Advanced Group Policy Management** for enhanced system control.  
-🚀 Automate user creation and group management using **PowerShell scripts**.  
-🚀 Gain experience integrating **Active Directory with Azure Active Directory (Azure AD)**.  
+### 4️⃣ [**Active Directory Group Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-GPO-Management) *(Click to View)*  
+- 🔹 Implementing **Role-Based Access Control (RBAC)**  
+- 🔹 Configuring **Multi-Factor Authentication (MFA) & Secure Access Policies**  
+- 🔹 Monitoring **Event Logs & AD Auditing for security compliance**  
 
 ---
 
-This Repository demonstrates my **real-world IT administration skills** and ability to **manage enterprise environments using Active Directory**. 🚀  
+## 💡 **Why This Portfolio?**  
+
+✔️ **Hands-on Experience** – Real-world AD configurations that IT professionals use in production  
+✔️ **Step-by-Step Guides** – Clear, structured instructions for replication in your own lab  
+✔️ **Automation & Efficiency** – Leveraging **PowerShell & Group Policies** to streamline IT administration  
+✔️ **Security-Focused** – Best practices for securing an **Active Directory** environment  
+
+
+---
+
+## 🚀 **Next Steps**  
+
+💾 **Clone this repo** and try setting up an AD environment yourself!  
+📖 **Explore each project** and follow the step-by-step documentation  
+
+---
