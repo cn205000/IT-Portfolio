@@ -2,8 +2,8 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Creating a Resource Group 
-- [ ] Deploying a VNET
+- [ ] Create a Resource Group 
+- [ ] Deploy a VNET
 - [ ] Generating a Domain Controller & Client VM
 - [ ] Configuring VM Settings for Domain use
 
