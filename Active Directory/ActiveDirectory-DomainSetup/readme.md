@@ -8,13 +8,13 @@
 
 
 ## 📌 Prerequisites
-- 🔐 Microsoft Azure Account (Free or Paid)
-
-- 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
-
 - 🌐 Internet connection
 
 - 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
+
+- 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
+
+- 🔐 Microsoft Azure Account (Free or Paid)
 
 - 🔧 Able to create VMs, Virtual Networks, and Resource Groups in Azure
 
