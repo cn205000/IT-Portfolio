@@ -1,6 +1,6 @@
 # 🛠️ Configuring a Domain Controller & Active Directory
 
-### This project walks through setting up a virtual **Windows Server Domain Controller** inside **Microsoft Azure**, then connecting a client VM to the domain. It simulates a traditional on-premises Active Directory environment.
+### This project walks you through setting up a virtual **Windows Server Domain Controller** inside of **Microsoft Azure**, then connecting a client VM to the domain. It simulates a traditional on-premises Active Directory environment.
 ---
 ## 🎥 Video Demonstration
 
