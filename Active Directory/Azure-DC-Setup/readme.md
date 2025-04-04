@@ -1,4 +1,4 @@
-# ☁️ Azure VM & VNET setup
+# ☁️ Setting Up a Domain Environment in Azure
 
 ### This project walks you through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
