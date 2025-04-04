@@ -8,9 +8,10 @@
 
 
 ## 📌 Prerequisites
-- **Azure subscription** (Free or Paid)
-  - 🌐 Internet connection
+- 🔐 Microsoft Azure Account (Free or Paid)
+- 🌐 Internet connection
 - 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
+  
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 
