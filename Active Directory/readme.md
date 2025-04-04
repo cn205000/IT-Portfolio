@@ -1,12 +1,12 @@
 # 🏢 **Active Directory Portfolio**  
 
-## 🔹  Showcasing Business-level Active Directory Deployments & Management  
+<h2>🔹  Showcasing Business-level Active Directory Deployments & Management</h2>
 
- Here I demonstrate hands-on experience in designing, implementing, and managing **Active Directory (AD) environments** and its prerequisites! 
+- Here I demonstrate hands-on experience in designing, implementing, and managing **Active Directory (AD) environments** and its prerequisites! 
 
- My projects below contain step-by-step guides and configurations for setting up and managing **Active Directory, Group Policy, User Management, and more!**  
+- My projects below contain step-by-step guides and configurations for setting up and managing **Active Directory, Group Policy, User Management, and more!** 
 
----
+
 
 ## 📌 **Projects in this Repository**  
 
