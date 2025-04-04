@@ -1,4 +1,4 @@
-# ☁️ Azure-DC-Setup
+# ☁️ Azure VM & VNET setup
 
 ### This project walks you through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
 ---
@@ -9,7 +9,8 @@
 
 ## 📌 Prerequisites
 - **Azure subscription** (Free or Paid)
-  
+  - 🌐 Internet connection
+- 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 
