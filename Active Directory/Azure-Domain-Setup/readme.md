@@ -1,6 +1,6 @@
 # ☁️ Setting Up a Domain Environment in Azure
 
-### This project walks you through setting up a VNET & VM's for a Domain Controller & a client machine in **Microsoft Azure.**
+### This project will walk you through setting up a VNET & VM's for a Domain Controller in **Microsoft Azure.**
 ---
 ## 🎥 Video Demonstration
 
