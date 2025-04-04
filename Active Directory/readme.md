@@ -10,12 +10,12 @@
 
 ## 📌 **Projects in this Repository**  
 
-### 1️⃣ [Azure Domain Setup](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Azure-Domain-Setup)    *(Click to View)*  
+### 1️⃣ [**Domain Server Creation In Azure**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Azure-Domain-Setup)    *(Click to View)*  
 - 🔹 Deploying an **Active Directory Domain Services (AD DS) environment** on **Azure Virtual Machines**  
 - 🔹 Configuring **VNETs, DNS, Static IPs, and Firewall Rules**  
 - 🔹 Joining a **Windows Client VM to the Domain**  
 
-### 2️⃣ [**Active Directory Domain Setup**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-DomainSetup) *(Click to View)*  
+### 2️⃣ [**Active Directory Domain Controller Setup**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-DomainSetup) *(Click to View)*  
 - 🔹 Setting up a **Domain Controller** on a **local Virtual Machine (VM)**  
 - 🔹 Creating **Organizational Units (OUs) and Security Groups**  
 - 🔹 Configuring **Group Policy Objects (GPOs) for network-wide management**  
