@@ -13,7 +13,7 @@
 - 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
   
 ## 🔗 Enviroments & Technologies Used 
--  **Azure**
+-  **Microsoft Azure**
 
 # *Installation Steps*
 
