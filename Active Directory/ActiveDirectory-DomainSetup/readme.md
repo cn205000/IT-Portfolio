@@ -1,11 +1,11 @@
 # 🛠️ Configuring a Domain Controller & Active Directory
 
-### This project walks you through setting up a virtual **Windows Server Domain Controller** inside of **Microsoft Azure**, then connecting a client VM to the domain.
----
-## 🎥 Video Demonstration
+## ✅ Project Task Summary
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
+- [ ] Connecting to VMs Using RDP
+- [ ] Configuring the Domain Controller within the Virtual Windows Server Machine
+- [ ] Disabling Firewall & Testing Connection to Domain Controller
+- [ ] Configuring Client VM Settings for Domain use
 
 ## 📌 Prerequisites
 - 🌐 Internet connection
@@ -16,16 +16,19 @@
 
 - 🔐 Microsoft Azure Account (Free or Paid)
 
-- 🔧 Able to create VMs, Virtual Networks, and Resource Groups in Azure
-
-- ⚙️ Two Azure Virtual Machines:
-
-  - 1 Windows Server VM (for Domain Controller)
-
-  - 1 Windows 10/11 VM (as the client)
+- 🔧 Have a Resource Group, Virtual Network and Virtual Machines created (via previous project) 
     
 ## 🔗 Enviroments & Technologies Used 
--  **Microsoft Azure**
+-  Microsoft Azure
+-  2022 Windows Server
+-  Windows 10 Pro
+-  Remote Desktop Protocol
+-  Command Prompt
+-  Windows Server Manager
+
+  ## 🎥 Video Demonstration
+
+- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 # *Installation Steps*
 
@@ -38,7 +41,7 @@
 5. Click **Connect** and login.
 
 <p>
-<img src="https://imgur.com/hE04qpk.png" height="75%" width="75%" alt="RG Creation">
+<img src="https://imgur.com/hE04qpk.png" height="75%" width="75%" alt="RDP">
 </p>
 
 <br>
@@ -59,7 +62,7 @@
 10. Once the server restarts, you must now log in via **domain credentials**: `domain\Username`. (eg. mydomain.com\admin123)
  
 <p>
-<img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="RG Creation">
+<img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="Server Manager">
 </p>
 
 <br>
@@ -74,7 +77,7 @@
 4. Click **Apply** and **OK**.
 
 <p>
-<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="VNET Creation">
+<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="Firewall">
 </p>
 
 <br>
@@ -96,7 +99,7 @@
 
 
 <p>
-<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Client-VM Creation">
+<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Command Prompt">
 </p>
 
 <br>
@@ -113,7 +116,7 @@
 6. On reboot, login using: `mydomain.com\YourUser`.
 
 <p>
-<img src="https://imgur.com/EKHU4I2.png" height="80%" width="80%" alt="NIC Change">
+<img src="https://imgur.com/EKHU4I2.png" height="80%" width="80%" alt="Joining Domain via Client VM">
 </p>
 
 <br>
@@ -128,5 +131,5 @@
 4. Type **domain users** 
 5. Apply and save changes.
 <p>
-<img src="https://imgur.com/NMBAGxU.png" height="80%" width="80%" alt="DNS IP Change">
+<img src="https://imgur.com/NMBAGxU.png" height="80%" width="80%" alt="Adjusting GP">
 </p>
