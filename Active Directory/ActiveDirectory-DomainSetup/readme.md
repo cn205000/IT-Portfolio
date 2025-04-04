@@ -1,6 +1,6 @@
 # 🛠️ Configuring a Domain Controller & Active Directory
 
-### This project walks you through setting up your Domain Controller
+### This project walks through setting up a virtual **Windows Server Domain Controller** inside **Microsoft Azure**, then connecting a client VM to the domain. It simulates a traditional on-premises Active Directory environment.
 ---
 ## 🎥 Video Demonstration
 
@@ -8,8 +8,22 @@
 
 
 ## 📌 Prerequisites
-- **Azure subscription** (Free or Paid)
-  
+- 🔐 Microsoft Azure Account (Free or Paid)
+
+- 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
+
+- 🌐 Internet connection
+
+- 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
+
+- 🔧 Able to create VMs, Virtual Networks, and Resource Groups in Azure
+
+- ⚙️ Two Azure Virtual Machines:
+
+  - 1 Windows Server VM (for Domain Controller)
+
+  - 1 Windows 10/11 VM (as the client)
+    
 ## 🔗 Enviroments & Technologies Used 
 -  **Azure**
 
@@ -24,7 +38,7 @@
 5. Click **Connect** and login.
 
 <p>
-<img src="https://imgur.com/ALp3vCX.png" height="65%" width="65%" alt="RG Creation">
+<img src="https://imgur.com/hE04qpk.png" height="75%" width="75%" alt="RG Creation">
 </p>
 
 <br>
@@ -45,7 +59,7 @@
 10. Once the server restarts, you must now log in via **domain credentials**: `domain\Username`. (eg. mydomain.com\admin123)
  
 <p>
-<img src="https://imgur.com/rjS0CS4.png" height="50%" width="50%" alt="VNET Creation">
+<img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="RG Creation">
 </p>
 
 <br>
@@ -60,7 +74,7 @@
 4. Click **Apply** and **OK**.
 
 <p>
-<img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="DC Creation">
+<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="VNET Creation">
 </p>
 
 <br>
@@ -78,42 +92,41 @@
    ```
    ipconfig /all
    ```
-4. To confirm it’s using the DC’s DNS and connected properly, look for
+4. To confirm it’s using the DC’s DNS and connected properly, look for "DNS Server", it should be linked to the DC's private IP
 
 
 <p>
-<img src="https://imgur.com/CO3c8ik.png" height="20%" width="50%" alt="Client-VM Creation">
+<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Client-VM Creation">
 </p>
 
 <br>
 <br>
 <br>
 
-# Step 5: Change Domain Controller's NIC to Static  
+# Step 5: 🖥️ Join Client VM to Domain
 
-1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
-2. Click on **Networking** > **Network Settings**.  
-3. Click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
-4. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
-5. Click **Save** to apply the changes.  
+1. Log into the **Client VM** as the local Administrator.
+2. Open **System Properties** (type 'Run' then `sysdm.cpl`).
+3. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., `mydomain.com`).
+4. When prompted, enter **Domain Admin credentials** (the ones set during DC configuration).
+5. After confirmation, **restart the Client VM**.
+6. On reboot, login using: `mydomain.com\YourUser`.
 
 <p>
-<img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
+<img src="https://imgur.com/EKHU4I2.png" height="80%" width="80%" alt="NIC Change">
 </p>
 
 <br>
 <br>
 <br>
 
-# Step 6: Change Client's DNS Server IP to Domain Controller's Private IP
+# Step 6: 🧑‍💻 Allow Domain Users to Use RDP
 
-1. Click on the **Domain Controller's VM** and copy the **Private IP Address** under **Properties**.
-2. Go to the **Client's VM** > **Networking** > **Network Settings**.
-3. Click on the **NIC** (labeled **Network Interface / IP Configuration**).
-4. Under **Settings** > **DNS Servers**.
-5. Click on **DNS servers** and set it to **Custom**, then paste the **Domain Controller's private IP** and click **Save**.
-6. Restart the **Client's VM** to ensure the NIC settings have been applied.
-
+1. Reconnect to the **Client VM** using the **DC admin account**.
+2. Open **System Properties** (type 'Run' then `sysdm.cpl`)
+3. Under **Remote**, click **Select Users** then **Add**
+4. Type **domain users** 
+5. Apply and save changes.
 <p>
-<img src="https://imgur.com/Qoz4tqO.png" height="40%" width="50%" alt="DNS IP Change">
+<img src="https://imgur.com/NMBAGxU.png" height="80%" width="80%" alt="DNS IP Change">
 </p>
