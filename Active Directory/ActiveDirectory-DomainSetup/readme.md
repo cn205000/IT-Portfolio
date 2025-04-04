@@ -25,7 +25,7 @@
   - 1 Windows 10/11 VM (as the client)
     
 ## 🔗 Enviroments & Technologies Used 
--  **Azure**
+-  **Microsoft Azure**
 
 # *Installation Steps*
 
