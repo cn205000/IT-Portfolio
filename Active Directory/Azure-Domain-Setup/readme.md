@@ -1,4 +1,4 @@
-# ☁️ Setting Up a Domain Environment in Azure
+<h1> ☁️ Setting Up a Domain Environment in Azure </h1>
 
 ## ✅ Project Task Summary
 
@@ -20,9 +20,9 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-# *Installation Steps*
+<h1> Installation Steps </h1>
 
-# Step 1: Create a Resource Group  
+## Step 1️⃣: Create a Resource Group  
 
 1. In the **Azure Portal**, go to **Resource Groups**.  
 2. Click **+ Create** and name it Azure-DC-Setup.  
@@ -35,9 +35,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 2: Create a Virtual Network (VNET)  
+## Step 2️⃣: Create a Virtual Network (VNET)  
 
 1. On the Azure Portal, go to **Virtual Networks** & hit create.
 2. Ensure the VNET is created under the correct **Resource Group**.  
@@ -50,9 +49,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 3: Create the Domain Controller (DC)  
+## Step 3️⃣: Create the Domain Controller (DC)  
 
 1. Under the Azure Portal, go to **Virtual Machines**.
 2. **Create a Virtual Machine (VM)** under the same **Resource Group**.  
@@ -69,9 +67,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 4: Create the Client VM  
+## Step 4️⃣: Create the Client VM  
 
 1. **Create a new Virtual Machine (VM)** under the same **Resource Group**.  
 2. Name the VM **Client** and ensure it is in the **same region & zone**.  
@@ -87,9 +84,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 5: Change Domain Controller's NIC to Static  
+## Step5️⃣: Change Domain Controller's NIC to Static  
 
 1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
 2. Click on **Networking** > **Network Settings**.  
@@ -103,9 +99,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 6: Change Client's DNS Server IP to Domain Controller's Private IP
+# Step 6️⃣: Change Client's DNS Server IP to Domain Controller's Private IP
 
 1. Click on the **Domain Controller's VM** and copy the **Private IP Address** under **Properties**.
 2. Go to the **Client's VM** > **Networking** > **Network Settings**.
