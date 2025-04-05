@@ -1,17 +1,17 @@
-# 🛠️ Configuring Users Within Active Directory
+<h1> 🛠️ Configuring Users Within Active Directory </h1>
 
 ## ✅ Project Task Summary
 
-- [ ] Creating Users
-- [ ] Configuring User Privileges
-- [ ] Managing User Accounts
+- [ ] Create Users
+- [ ] Configure User Privileges
+- [ ] Manage User Accounts
 
 ## 📌 Prerequisites
 - 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
 - 🌐 A **Client VM** joined to the same domain
 - 💼 **Active Directory Domain Services (AD DS)** installed and configured
-- - 📡**Remote Desktop Protocol (RDP)**
-- 🧠 Basic understanding of:
+- 📡**Remote Desktop Protocol (RDP)**
+- 🧠 **Basic understanding of:**
   - Organizational Units (OUs)
   - Group Policy
   - Domain vs. Local accounts
@@ -28,9 +28,9 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-# *Installation Steps*
+<h1> Installation Steps </h1>
 
-## 1️⃣ Creating an Admin User in Active Directory
+## Step 1️⃣: Creating an Admin User in Active Directory
 
 1. Open **Active Directory Users and Computers (ADUC)** by running `dsa.msc`.
 2. Right-click your domain in ADUC, go to New > Organizational Unit, and name it _ADMINS for Domain Admins.
@@ -47,9 +47,8 @@
 
 <br>
 <br>
-<br>
 
-## 2️⃣ Assigning Admin Privileges
+## Step 2️⃣: Assigning Admin Privileges
 
 1. Right-click the new user (e.g., `ITAdmin01`) → **Properties**.
 2. Go to the **Member Of** tab → Click **Add**.
@@ -64,9 +63,8 @@
 
 <br>
 <br>
-<br>
 
-## 3️⃣ Creating a Standard User (New Employee)
+## Step 3️⃣: Creating a Standard User (New Employee)
 
 1. Open **ADUC** → Right-click on the **Users** container → **New > User**.
 2. Enter the user's **First and Last Name**.
@@ -83,19 +81,18 @@
 
 <br>
 <br>
-<br>
 
-### 5️⃣ Managing User Accounts (Day-to-Day IT Tasks)
+## Step 4️⃣: Managing User Accounts (Day-to-Day IT Tasks)
 
-#### ✅ Resetting Passwords
-- Right-click the user → **Reset Password** → Enter new password.
+1. Resetting Passwords
+  - Right-click the user → **Reset Password** → Enter new password.
 
-#### ✅ Disabling or Removing Users
-- Right-click the user → **Disable Account** (useful when offboarding).
-- To delete a user: Right-click → **Delete**.
+2. Disabling or Removing Users
+  - Right-click the user → **Disable Account** (useful when offboarding).
+  - To delete a user: Right-click → **Delete**.
 
-#### ✅ Modifying User Properties
-- Open a user's **Properties** to configure:
+3. Modifying User Properties
+  - Open a user's **Properties** to configure:
   - **Profile Path** (for Roaming Profiles)
   - **Logon Hours** (set login time restrictions)
   - **Group Memberships** (adjust user permissions)
@@ -110,9 +107,8 @@
 
 <br>
 <br>
-<br>
 
-## 7️⃣ Verifying User Login & Password Policy
+## Step 5️⃣: Verifying User Login & Password Policy
 
 1. On the **Client VM**, login as the **new user**.
 2. On the **Admin VM**, go to the **new user account** and select **"Reset password at next login"**.
