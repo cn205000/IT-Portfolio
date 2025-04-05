@@ -1,11 +1,11 @@
-# 🛠️ Configuring a Domain Controller & Active Directory
+<h1> 🛠️ Configuring a Domain Controller & Active Directory </h1>
 
 ## ✅ Project Task Summary
 
-- [ ] Connecting to VMs Using RDP
-- [ ] Configuring the Domain Controller within the Virtual Windows Server Machine
-- [ ] Disabling Firewall & Testing Connection to Domain Controller
-- [ ] Configuring Client VM Settings for Domain use
+- [ ] Connect to VMs Using RDP
+- [ ] Configure the Domain Controller within the Virtual Windows Server Machine
+- [ ] Disable Domain Firewall & Test Connection to Domain Controller
+- [ ] Configure Client VM Settings for Domain use
 
 ## 📌 Prerequisites
 - 🌐 Internet connection
@@ -30,9 +30,9 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-# *Installation Steps*
+<h1> Installation Steps </h1>
 
-## Step 1: 🔐 Using Remote Desktop Protocol (RDP)
+## Step 1️⃣: Using Remote Desktop Protocol (RDP)
 
 1. Go to your **Domain Controller VM** on Azure and copy the **Public IP Address**.
 2. On your Windows search bar, search for **Remote Desktop Connection** and open it.
@@ -48,7 +48,7 @@
 <br>
 <br>
 
-## Step 2. 🏗️ Configuring the Domain Controller (DC)
+## Step 2️⃣: Configuring the Domain Controller (DC)
 
 1. On the DC VM, open **Server Manager**.
 2. Click **Add Roles & Features** > Next > Next > Next.
@@ -69,7 +69,7 @@
 <br>
 <br>
 
-## Step 3: 🔥 Disable Firewall on DC (for testing/ping)
+## Step 3️⃣: Disable Firewall on DC (for testing/ping)
 
 1. Open `Run` in Windows search, type `wf.msc`, and press Enter.
 2. Click **Windows Firewall Properties** (top of the left panel).
@@ -84,17 +84,13 @@
 <br>
 <br>
 
-## Step 4: 🔄 Test Connection from Client VM
+## Step 4️⃣: Test Connection from Client VM
 
 1. RDP into your **Client VM**. (We are not using domain login yet)
 2. Open **PowerShell** and run:  
-   ```
    ping <DC_Private_IP>
-   ```
 3. Run:  
-   ```
    ipconfig /all
-   ```
 4. To confirm it’s using the DC’s DNS and connected properly, look for "DNS Server", it should be linked to the DC's private IP
 
 
@@ -104,9 +100,8 @@
 
 <br>
 <br>
-<br>
 
-# Step 5: 🖥️ Join Client VM to Domain
+## Step 5️⃣: Join Client VM to Domain
 
 1. Log into the **Client VM** as the local Administrator.
 2. Open **System Properties** (type 'Run' then `sysdm.cpl`).
@@ -123,13 +118,14 @@
 <br>
 <br>
 
-# Step 6: 🧑‍💻 Allow Domain Users to Use RDP
+## Step 6️⃣: Allow Domain Users to Use RDP
 
 1. Reconnect to the **Client VM** using the **DC admin account**.
 2. Open **System Properties** (type 'Run' then `sysdm.cpl`)
 3. Under **Remote**, click **Select Users** then **Add**
 4. Type **domain users** 
 5. Apply and save changes.
+   
 <p>
 <img src="https://imgur.com/NMBAGxU.png" height="80%" width="80%" alt="Adjusting GP">
 </p>
