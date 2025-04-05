@@ -11,7 +11,7 @@
 - 🌐 A **Client VM** joined to the same domain
 - 💼 **Active Directory Domain Services (AD DS)** installed and configured
 - 📡**Remote Desktop Protocol (RDP)**
-- 🧠 Basic understanding of:
+- 🧠 **Basic understanding of:**
   - Organizational Units (OUs)
   - Group Policies
     
