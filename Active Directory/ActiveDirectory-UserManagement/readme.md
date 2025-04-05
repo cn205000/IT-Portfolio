@@ -32,15 +32,15 @@
 
 ## Step 1️⃣: Creating an Admin User in Active Directory
 
-1. Open **Active Directory Users and Computers (ADUC)** by running `dsa.msc`.
+1. Open **Active Directory Users and Computers (ADUC)** by running dsa.msc.
 2. Right-click your domain in ADUC, go to New > Organizational Unit, and name it _ADMINS for Domain Admins.
 3. Right-click the newly created OU and select **New > User**.
-4. Enter a name for the user (e.g., `ITAdmin01`).
+4. Enter a name for the user (e.g., ITAdmin01).
 5. Set an initial password.
 6. Uncheck **"User must change password at next logon"** (for admin accounts).
 7. Click **Next**, then **Finish**.
 
-> 📌 *Why?* This sets up an admin account with elevated privileges for managing users and AD settings.
+> 📌 *Why?* This establishes an admin account with elevated privileges for managing users and AD settings.
 <p>
 <img src="https://imgur.com/gJK152u.png" height="75%" width="75%" alt="RDP">
 </p>
@@ -50,7 +50,7 @@
 
 ## Step 2️⃣: Assigning Admin Privileges
 
-1. Right-click the new user (e.g., `ITAdmin01`) → **Properties**.
+1. Right-click the new user (e.g. ITAdmin01) → **Properties**.
 2. Go to the **Member Of** tab → Click **Add**.
 3. Type **Domain Admins**, then click **Apply** → **OK**.
 
