@@ -44,7 +44,7 @@
 
 > 📌 *Why?* This sets up an admin account with elevated privileges for managing users and AD settings.
 <p>
-<img src="https://imgur.com/hE04qpk.png" height="75%" width="75%" alt="RDP">
+<img src="https://imgur.com/gJK152u.png" height="75%" width="75%" alt="RDP">
 </p>
 
 <br>
@@ -61,7 +61,7 @@
 
  
 <p>
-<img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="Server Manager">
+<img src="https://imgur.com/BkseNo2.png" height="85%" width="85%" alt="Server Manager">
 </p>
 
 <br>
@@ -80,7 +80,7 @@
 > 📌 *Why?* Simulates onboarding a new employee with standard domain-level access.
 
 <p>
-<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="Firewall">
+<img src="https://imgur.com/FF97f1z.png" height="30%" width="60%" alt="Firewall">
 </p>
 
 <br>
@@ -107,7 +107,7 @@
 
 
 <p>
-<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Command Prompt">
+<img src="https://imgur.com/mUejQPQ.png" height="40%" width="70%" alt="Command Prompt">
 </p>
 
 <br>
@@ -125,6 +125,3 @@
 
 📌 **Why?** This ensures users comply with password policies before accessing resources.
 
-<p>
-<img src="https://imgur.com/EKHU4I2.png" height="80%" width="80%" alt="Joining Domain via Client VM">
-</p>
