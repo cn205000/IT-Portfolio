@@ -39,8 +39,8 @@
 
 1. Open **Active Directory Users and Computers (ADUC)** on the Domain Controller.
 2. In the left pane, **right-click your domain** (e.g., mydomain.com) → Hover over **New** → Click **Organizational Unit**.
-3. Name the OU appropriately & create. (create these OU examples: _ADMINS, _USERS, _COMPUTERS).
-4. Within the **_USERS**, create more OU's named: IT, HR, Finance, Sales 
+3. Name the OU appropriately & create it. (create these OU examples: _ADMINS, _USERS, _COMPUTERS).
+4. Within the **_USERS**, create more OUs named: IT, HR, Finance, Sales 
 
 > 📌 *Why?* OUs let you logically organize users, computers, and groups, making management and GPO application easier.
 
@@ -50,7 +50,7 @@
 
 1. In **ADUC**, navigate to the OU where you want to create the group (e.g., **IT**).
 2. Right-click inside the OU → Click **New** → Select **Group**.
-3. Name the group (example: **IT-Admins**).
+3. Name the group (for example, **IT-Admins**).
 4. Set **Group scope** to **Global** and **Group type** to **Security**.
 5. Click **OK** to create the group.
    (*create more groups for each department*)
@@ -102,9 +102,9 @@ Open **Group Policy Management** on the Domain Controller.
 <br>
 
 ## Step 2️⃣: Enforcing Group Policy Settings for Specific Departments
-1. In GPMC go to **IT-Admins** group.
+1. In GPMC, go to the **IT-Admins** group.
 2. Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
-3. Right Click → Edit GPO:
+3. Right-click → Edit GPO:
   - Computer Configuration → Windows Settings → Security Settings → Local Policies → User Rights Assignment
 4. Grant these permissions to **IT-Admins, Administrators** group:
   - Log on locally
@@ -120,13 +120,13 @@ Open **Group Policy Management** on the Domain Controller.
 <br>
 
 ## Step 2️⃣.1️⃣: Restrict Access for Finance group:
-1. Create a new GPO and link it to the **Finance** OU. Name it **Finance-Restricted Policy**.
+1. Link a new GPO to the **Finance** OU. Name it **Finance-Restricted Policy**.
 2. Right-click Edit GPO
 3. Prevent CMD access:
     User Configuration → Policies → Administrative Templates → System → Prevent access to the command prompt → Enabled
         ✅ Apply the Policy 
 
-4. Restrict access to C: drive:
+4. Restrict access to the C: drive:
     User Configuration → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
         ✅ Apply the Policy
 
@@ -147,7 +147,7 @@ Open **Group Policy Management** on the Domain Controller.
 ## Step 3️⃣: Confirm Changes
 1. Log in as Finance user on Client VM
 2. CMD should be blocked.
-3. C:\ drive access hidden.
+3. The C: drive access is hidden.
 
 <br>
 <br>
@@ -163,7 +163,7 @@ Open **Group Policy Management** on the Domain Controller.
 4. **Permissions**:
   - **Authenticated Users**: Full Control (if needed)
   - **Administrators**: Full Control
- The folder can now be accesed this way: (\\DOMAIN HERE\FOLDER NAME HERE)
+ The folder can now be accessed this way: (\\DOMAIN HERE\FOLDER NAME HERE)
 
 <br>
 
@@ -179,7 +179,7 @@ Open **Group Policy Management** on the Domain Controller.
 2. Navigate to:
   User Configuration → Policies → Windows Settings → Scripts (Logon/Logoff) → Logon
 3. Double-click **Logon** → Click **Add** → Browse and type in the **NETLOGON** path from earlier.
-4. select map-drive.bat & apply 
+4. Select map-drive.bat & apply 
 
 <br>
 
