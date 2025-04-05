@@ -1,4 +1,4 @@
-# 🛠️ Active Directory: OU, Group, and GPO Management
+<h1>  🛠️ Active Directory: OU, Group, and GPO Management </h1>
 
 ## ✅ Project Task Summary
 
@@ -27,15 +27,15 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-# *Project Steps*
+<h1> ⚙️ Project Steps </h1>
 
-## 🏗️ Creating Organizational Units (OUs) & Security Groups
+# 🏗️ Creating Organizational Units (OUs) & Security Groups
 
  ### These steps will help structure your Active Directory environment and assign permissions more efficiently. *(Required)*
 
 ---
 
-### 1️⃣ Create Organizational Units (OUs)
+### Step 1️⃣: Create Organizational Units (OUs)
 
 1. Open **Active Directory Users and Computers (ADUC)** on the Domain Controller.
 2. In the left pane, **right-click your domain** (e.g., mydomain.com) → Hover over **New** → Click **Organizational Unit**.
@@ -44,8 +44,9 @@
 
 > 📌 *Why?* OUs let you logically organize users, computers, and groups, making management and GPO application easier.
 
+<br>
 
-### 2️⃣ Create Security Groups
+### Step 2️⃣: Create Security Groups
 
 1. In **ADUC**, navigate to the OU where you want to create the group (e.g., **IT**).
 2. Right-click inside the OU → Click **New** → Select **Group**.
@@ -56,13 +57,16 @@
 
 > 📌 *Why?* Security groups are used to assign permissions and apply Group Policies to sets of users.
 
+<br>
 
-### 3️⃣ Add Members to the Groups
+### Step 3️⃣: Add Members to the Groups
 
 1. Double-click the newly created group (e.g., **IT-Admins**) → Go to the **Members** tab.
 2. Click **Add**, type the usernames of users to include, then click **Check Names** and **OK**.
 
 > 📌 *Why?* Group membership allows users to inherit permissions and settings from the group policies.
+
+<br>
 
 ### *Example:*
 
@@ -71,18 +75,22 @@
 </p>
 
 
-
+<br>
+<br>
+<br>
 
 # 🛡️ Active Directory Group Policy & Security Configuration
 
-## 1️⃣ Editing the Default Domain Policy
+## Step 1️⃣: Editing the Default Domain Policy
 Open **Group Policy Management** on the Domain Controller.
 1. Expand your domain in GPMC.
 2. Locate **Default Domain Policy** → Right-click → **Edit**.
 3. Navigate to:
   Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
 
-  ## 1️⃣.2️⃣ Enforcing Strong Password Policies
+<br>
+
+  ## Step 1️⃣.2️⃣: Enforcing Strong Password Policies
 🔹 Configure the following under Password Policy:
 1. **Enforce password history**: 24 passwords remembered
 2. **Maximum password age**: 90 days
@@ -95,8 +103,9 @@ Open **Group Policy Management** on the Domain Controller.
 
 📌 **Why?** Helps prevent unauthorized access by enforcing strong password practices for anyone under the domain.
 
+<br>
 
-## 2️⃣ Enforcing Group Policy Settings for Specific Departments
+## Step 2️⃣: Enforcing Group Policy Settings for Specific Departments
 1. In GPMC go to **IT-Admins** group.
 2. Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
 3. Right Click → Edit GPO:
@@ -112,17 +121,20 @@ Open **Group Policy Management** on the Domain Controller.
 
 📌 **Why?** Secures administrative tasks by assigning them only to approved users.
 
+<br>
 
-## 2️⃣.1️⃣ Restrict Access for Finance group:
+## Step 2️⃣.1️⃣: Restrict Access for Finance group:
 1. Create a new GPO and link it to the **Finance** OU. Name it **Finance-Restricted Policy**.
 2. Right-click Edit GPO
   3. Prevent CMD access:
     User Configuration → Policies → Administrative Templates → System → Prevent access to the command prompt → Enabled
         ✅ Apply the Policy 
-    
+
   4. Restrict access to C: drive:
     User Configuration → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
         ✅ Apply the Policy
+     
+     <br>
      
 <p>
 <img src="https://imgur.com/s0QhENY.png" height="85%" width="90%" alt="IT-ADMIN GP">
@@ -132,18 +144,22 @@ Open **Group Policy Management** on the Domain Controller.
 <img src="https://imgur.com/7wRJ9c6.png" height="85%" width="90%" alt="IT-ADMIN GP">
 </p>
 
+<br>
 
-## 3️⃣ Confirm Changes
+## Step 3️⃣: Confirm Changes
 1. Log in as Finance user on Client VM
 2. CMD should be blocked.
 3. C:\ drive access hidden.
 
 📌 **Why?** Maintains security and compliance for sensitive departments.
 
+<br>
+<br>
+<br>
 
-## 🚀 Network Drive Mapping via Logon Script
+# 🚀 Network Drive Mapping via Logon Script
 
-### 1️⃣ Create Shared Network Folder
+### Step 1️⃣: Create Shared Network Folder
 1. On Domain Controller go to **C:** on File Explorer → Create new folder & rename.
 2. Right-click folder → **Properties** → **Sharing** tab → **Advanced Sharing...**.
 3. Check ✅ **"Share this folder"**.
@@ -152,22 +168,25 @@ Open **Group Policy Management** on the Domain Controller.
   - **Administrators**: Full Control
  The folder can now be accesed this way: (\\DOMAIN HERE\FOLDER NAME HERE)
 
+<br>
 
-### 2️⃣ Create Logon Script
+### Step 2️⃣: Create Logon Script
 1. Open **Notepad**, paste:
   net use G: \\DOMAIN HERE\FOLDER NAME HERE /persistent:yes
 2. Save this as map-drive.bat & save it in this path: (\\DOMAIN HERE\NETLOGON)
 
+<br>
 
-### 3️⃣ Assign Script via Group Policy
+### Step 3️⃣: Assign Script via Group Policy
 1. Open GPMC → Expand domain → Right-click an OU (has a group and user assigned to it) → Edit.
 2. Navigate to:
   User Configuration → Policies → Windows Settings → Scripts (Logon/Logoff) → Logon
 3. Double-click **Logon** → Click **Add** → Browse and type in the **NETLOGON** path from earlier.
 4. select map-drive.bat & apply 
 
+<br>
 
-### 4️⃣ Apply and Test
+### Step 4️⃣: Apply and Test
 1. On a domain-joined PC, open cmd and type:
    gpupdate /force
 2. Log out/in as a domain user.
