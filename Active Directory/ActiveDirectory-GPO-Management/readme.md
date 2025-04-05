@@ -81,27 +81,23 @@
 
 # 🛡️ Active Directory Group Policy & Security Configuration
 
-## Step 1️⃣: Editing the Default Domain Policy
+## Step 1️⃣: Editing the Default Domain Policy & Enforcing Strong Password Policies
 Open **Group Policy Management** on the Domain Controller.
 1. Expand your domain in GPMC.
 2. Locate **Default Domain Policy** → Right-click → **Edit**.
 3. Navigate to:
   Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
-
-<br>
-
-  ## Step 1️⃣.2️⃣: Enforcing Strong Password Policies
 🔹 Configure the following under Password Policy:
-1. **Enforce password history**: 24 passwords remembered
-2. **Maximum password age**: 90 days
-3. **Minimum password length**: 12 characters
-4. **Password must meet complexity requirements**: Enabled
+4. **Enforce password history**: 24 passwords remembered
+5. **Maximum password age**: 90 days
+6. **Minimum password length**: 12 characters
+7. **Password must meet complexity requirements**: Enabled
+   
+📌 **Why?** Helps prevent unauthorized access by enforcing strong password practices for anyone under the domain.
 
 <p>
 <img src="https://imgur.com/wdK5Qko.png" height="85%" width="90%" alt="Password GP">
 </p>
-
-📌 **Why?** Helps prevent unauthorized access by enforcing strong password practices for anyone under the domain.
 
 <br>
 
@@ -114,27 +110,29 @@ Open **Group Policy Management** on the Domain Controller.
   - Log on locally
   - Allow log on through Remote Desktop Services
 
+📌 **Why?** Secures administrative tasks by assigning them only to approved users.
+
 <p>
 <img src="https://imgur.com/xHl7F4A.png" height="85%" width="90%" alt="IT-ADMIN GP">
 </p>
 
-
-📌 **Why?** Secures administrative tasks by assigning them only to approved users.
 
 <br>
 
 ## Step 2️⃣.1️⃣: Restrict Access for Finance group:
 1. Create a new GPO and link it to the **Finance** OU. Name it **Finance-Restricted Policy**.
 2. Right-click Edit GPO
-  3. Prevent CMD access:
+3. Prevent CMD access:
     User Configuration → Policies → Administrative Templates → System → Prevent access to the command prompt → Enabled
         ✅ Apply the Policy 
 
-  4. Restrict access to C: drive:
+4. Restrict access to C: drive:
     User Configuration → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
         ✅ Apply the Policy
-     
-     <br>
+
+📌 **Why?** Maintains security and compliance for sensitive departments.
+
+<br>
      
 <p>
 <img src="https://imgur.com/s0QhENY.png" height="85%" width="90%" alt="IT-ADMIN GP">
@@ -151,13 +149,12 @@ Open **Group Policy Management** on the Domain Controller.
 2. CMD should be blocked.
 3. C:\ drive access hidden.
 
-📌 **Why?** Maintains security and compliance for sensitive departments.
-
 <br>
 <br>
 <br>
 
 # 🚀 Network Drive Mapping via Logon Script
+📌 **Why?** Automatically maps shared drives for users at login, ensuring consistent and easy access to network resources.
 
 ### Step 1️⃣: Create Shared Network Folder
 1. On Domain Controller go to **C:** on File Explorer → Create new folder & rename.
@@ -192,4 +189,3 @@ Open **Group Policy Management** on the Domain Controller.
 2. Log out/in as a domain user.
 3. Open **File Explorer** → G: drive should appear.
 
-📌 **Why?** Ensures centralized and consistent access to shared resources.
