@@ -16,7 +16,7 @@
 
 - 🔐 Microsoft Azure Account (Free or Paid)
 
-- 🔧 Have a Resource Group, Virtual Network and Virtual Machines created (via previous project) 
+- 🔧 Have a Resource Group, Virtual Network, & Virtual Machines created (via previous project) 
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
@@ -55,11 +55,11 @@
 3. Select **Active Directory Domain Services**, click Next until you reach **Install**.
 4. Check **Restart destination server automatically** and click **Install**.
 5. After installation, click the **flag icon** in Server Manager > **Promote this server to a domain controller**.
-6. Choose **Add a new forest** and create a domain (e.g., `mydomain.com`), then click Next.
+6. Choose **Add a new forest** and create a domain (e.g., mydomain.com), then click Next.
 7. For the **Directory Services Restore Mode (DSRM)** password, set anything strong or easy if for testing purposes.
 8. Uncheck **Create DNS delegation** when prompted.
 9. Continue through the wizard and click **Install**.
-10. Once the server restarts, you must now log in via **domain credentials**: `domain\Username`. (eg. mydomain.com\admin123)
+10. Once the server restarts, log in via **domain credentials**: domain\Username. (eg. mydomain.com\admin123)
  
 <p>
 <img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="Server Manager">
@@ -71,7 +71,7 @@
 
 ## Step 3️⃣: Disable Firewall on DC (for testing/ping)
 
-1. Open `Run` in Windows search, type `wf.msc`, and press Enter.
+1. Open Run in Windows search, type wf.msc, and press Enter.
 2. Click **Windows Firewall Properties** (top of the left panel).
 3. For **Domain, Private, and Public Profiles**, set **Firewall State** to **Off**.
 4. Click **Apply** and **OK**.
@@ -104,11 +104,11 @@
 ## Step 5️⃣: Join Client VM to Domain
 
 1. Log into the **Client VM** as the local Administrator.
-2. Open **System Properties** (type 'Run' then `sysdm.cpl`).
-3. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., `mydomain.com`).
+2. Open **System Properties** (type 'Run' then sysdm.cpl).
+3. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., mydomain.com).
 4. When prompted, enter **Domain Admin credentials** (the ones set during DC configuration).
 5. After confirmation, **restart the Client VM**.
-6. On reboot, login using: `mydomain.com\YourUser`.
+6. On reboot, log in using mydomain.com\YourUser.
 
 <p>
 <img src="https://imgur.com/EKHU4I2.png" height="80%" width="80%" alt="Joining Domain via Client VM">
@@ -121,7 +121,7 @@
 ## Step 6️⃣: Allow Domain Users to Use RDP
 
 1. Reconnect to the **Client VM** using the **DC admin account**.
-2. Open **System Properties** (type 'Run' then `sysdm.cpl`)
+2. Open **System Properties** (type 'Run' then sysdm.cpl)
 3. Under **Remote**, click **Select Users** then **Add**
 4. Type **domain users** 
 5. Apply and save changes.
