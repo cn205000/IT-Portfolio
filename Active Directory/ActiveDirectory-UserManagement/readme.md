@@ -1,30 +1,28 @@
-# 🛠️ Configuring a Domain Controller & Active Directory
+# 🛠️ Configuring Users Within Active Directory
 
 ## ✅ Project Task Summary
 
-- [ ] Connecting to VMs Using RDP
-- [ ] Configuring the Domain Controller within the Virtual Windows Server Machine
-- [ ] Disabling Firewall & Testing Connection to Domain Controller
-- [ ] Configuring Client VM Settings for Domain use
+- [ ] Creating Users
+- [ ] Configuring User Privileges
+- [ ] Managing User Accounts
 
 ## 📌 Prerequisites
-- 🌐 Internet connection
+- 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
+- 🌐 A **Client VM** joined to the same domain
+- 💼 **Active Directory Domain Services (AD DS)** installed and configured
+- - 📡**Remote Desktop Protocol (RDP)**
+- 🧠 Basic understanding of:
+  - Organizational Units (OUs)
+  - Group Policy
+  - Domain vs. Local accounts
 
-- 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
-
-- 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
-
-- 🔐 Microsoft Azure Account (Free or Paid)
-
-- 🔧 Have a Resource Group, Virtual Network and Virtual Machines created (via previous project) 
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
 -  2022 Windows Server
 -  Windows 10 Pro
 -  Remote Desktop Protocol
--  Command Prompt
--  Windows Server Manager
+-  Active Directory Users and Computers (ADUC)
 
   ## 🎥 Video Demonstration
 
