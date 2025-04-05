@@ -85,7 +85,7 @@
 <br>
 <br>
 
-## Step5️⃣: Change Domain Controller's NIC to Static  
+## Step 5️⃣: Change Domain Controller's NIC to Static  
 
 1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
 2. Click on **Networking** > **Network Settings**.  
@@ -104,7 +104,7 @@
 <br>
 <br>
 
-# Step 6️⃣: Change Client's DNS Server IP to Domain Controller's Private IP
+# Step 6️⃣: Change the Client's DNS Server IP to the Domain Controller's Private IP
 
 1. Click on the **Domain Controller's VM** and copy the **Private IP Address** under **Properties**.
 2. Go to the **Client's VM** > **Networking** > **Network Settings**.
