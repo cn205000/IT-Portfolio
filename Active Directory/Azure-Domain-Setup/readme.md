@@ -93,6 +93,10 @@
 4. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
 5. Click **Save** to apply the changes.  
 
+> 📌 **Why?** A static IP ensures the Domain Controller is always reachable by clients and services within the network.
+
+<br>
+
 <p>
 <img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
 </p>
@@ -108,6 +112,10 @@
 4. Under **Settings** > **DNS Servers**.
 5. Click on **DNS servers** and set it to **Custom**, then paste the **Domain Controller's private IP** and click **Save**.
 6. Restart the **Client's VM** to ensure the NIC settings have been applied.
+   
+> 📌 **Why?** Pointing the client’s DNS to the Domain Controller allows proper domain name resolution and enables domain-related services to function correctly.
+
+<br>
 
 <p>
 <img src="https://imgur.com/Qoz4tqO.png" height="40%" width="50%" alt="DNS IP Change">
