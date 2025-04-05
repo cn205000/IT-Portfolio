@@ -1,10 +1,10 @@
-# 🛠️ Configuring Users Within Active Directory
+# 🛠️ Active Directory: OU, Group, and GPO Management
 
 ## ✅ Project Task Summary
 
-- [ ] Creating Users
-- [ ] Configuring User Privileges
-- [ ] Managing User Accounts
+- [ ] Creating Organizational Units (OUs) & Security Groups
+- [ ] Configuring Active Directory Group Policies & Security Configuration:
+- [ ] Network Drive Mapping via Logon Script
 
 ## 📌 Prerequisites
 - 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
@@ -13,9 +13,7 @@
 - 📡**Remote Desktop Protocol (RDP)**
 - 🧠 Basic understanding of:
   - Organizational Units (OUs)
-  - Group Policy
-  - Domain vs. Local accounts
-
+  - Group Policies
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
@@ -23,12 +21,13 @@
 -  Windows 10 Pro
 -  Remote Desktop Protocol
 -  Active Directory Users and Computers (ADUC)
+-  Group Policy Management (GPMC)
 
   ## 🎥 Video Demonstration
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-# *Installation Steps*
+# *Project Steps*
 
 ## 🏗️ Creating Organizational Units (OUs) & Security Groups
 
@@ -65,9 +64,11 @@
 
 > 📌 *Why?* Group membership allows users to inherit permissions and settings from the group policies.
 
-### *Example*
+### *Example:*
 
-<IMAGE>
+<p>
+<img src="https://imgur.com/qxMVqs3.png" height="65%" width="65%" alt="OU/SG Creation">
+</p>
 
 
 
@@ -88,6 +89,10 @@ Open **Group Policy Management** on the Domain Controller.
 3. **Minimum password length**: 12 characters
 4. **Password must meet complexity requirements**: Enabled
 
+<p>
+<img src="https://imgur.com/wdK5Qko.png" height="85%" width="90%" alt="Password GP">
+</p>
+
 📌 **Why?** Helps prevent unauthorized access by enforcing strong password practices for anyone under the domain.
 
 
@@ -96,9 +101,14 @@ Open **Group Policy Management** on the Domain Controller.
 2. Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
 3. Right Click → Edit GPO:
   - Computer Configuration → Windows Settings → Security Settings → Local Policies → User Rights Assignment
-4. Grant these permissions to **IT-Admins** group:
+4. Grant these permissions to **IT-Admins, Administrators** group:
   - Log on locally
   - Allow log on through Remote Desktop Services
+
+<p>
+<img src="https://imgur.com/xHl7F4A.png" height="85%" width="90%" alt="IT-ADMIN GP">
+</p>
+
 
 📌 **Why?** Secures administrative tasks by assigning them only to approved users.
 
@@ -106,14 +116,22 @@ Open **Group Policy Management** on the Domain Controller.
 ## 2️⃣.1️⃣ Restrict Access for Finance group:
 1. Create a new GPO and link it to the **Finance** OU. Name it **Finance-Restricted Policy**.
 2. Right-click Edit GPO
-  
   3. Prevent CMD access:
-    User Configuration → Administrative Templates → System → Prevent access to the command prompt → Enabled
-        ✅ Apply the Policy
+    User Configuration → Policies → Administrative Templates → System → Prevent access to the command prompt → Enabled
+        ✅ Apply the Policy 
     
   4. Restrict access to C: drive:
     User Configuration → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
         ✅ Apply the Policy
+     
+<p>
+<img src="https://imgur.com/s0QhENY.png" height="85%" width="90%" alt="IT-ADMIN GP">
+</p>
+
+<p>
+<img src="https://imgur.com/7wRJ9c6.png" height="85%" width="90%" alt="IT-ADMIN GP">
+</p>
+
 
 ## 3️⃣ Confirm Changes
 1. Log in as Finance user on Client VM
@@ -125,32 +143,31 @@ Open **Group Policy Management** on the Domain Controller.
 
 ## 🚀 Network Drive Mapping via Logon Script
 
-### Step 1: Create Shared Network Folder
-1. On Domain Controller:
-  - Go to **C:** on File Explorer → Create new folder & rename.
-  - Right-click folder → **Properties** → **Sharing** tab → **Advanced Sharing...**.
-  - Check ✅ **"Share this folder"**.
-  - **Permissions**:
-    - **Authenticated Users**: Full Control (if needed)
-    - **Administrators**: Full Control
+### 1️⃣ Create Shared Network Folder
+1. On Domain Controller go to **C:** on File Explorer → Create new folder & rename.
+2. Right-click folder → **Properties** → **Sharing** tab → **Advanced Sharing...**.
+3. Check ✅ **"Share this folder"**.
+4. **Permissions**:
+  - **Authenticated Users**: Full Control (if needed)
+  - **Administrators**: Full Control
  The folder can now be accesed this way: (\\DOMAIN HERE\FOLDER NAME HERE)
 
 
-### Step 2: Create Logon Script
-- Open **Notepad**, paste:
+### 2️⃣ Create Logon Script
+1. Open **Notepad**, paste:
   net use G: \\DOMAIN HERE\FOLDER NAME HERE /persistent:yes
-- Save this as map-drive.bat & save it in this path: (\\DOMAIN HERE\NETLOGON)
+2. Save this as map-drive.bat & save it in this path: (\\DOMAIN HERE\NETLOGON)
 
 
-### Step 3: Assign Script via Group Policy
-- Open GPMC → Expand domain → Right-click an OU (has a group and user assigned to it) → Edit.
-- Navigate to:
+### 3️⃣ Assign Script via Group Policy
+1. Open GPMC → Expand domain → Right-click an OU (has a group and user assigned to it) → Edit.
+2. Navigate to:
   User Configuration → Policies → Windows Settings → Scripts (Logon/Logoff) → Logon
-- Double-click **Logon** → Click **Add** → Browse and type in the **NETLOGON** path from earlier.
-- select map-drive.bat & apply 
+3. Double-click **Logon** → Click **Add** → Browse and type in the **NETLOGON** path from earlier.
+4. select map-drive.bat & apply 
 
 
-### Step 4: Apply and Test
+### 4️⃣ Apply and Test
 1. On a domain-joined PC, open cmd and type:
    gpupdate /force
 2. Log out/in as a domain user.
