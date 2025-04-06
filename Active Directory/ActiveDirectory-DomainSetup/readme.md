@@ -30,7 +30,7 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-<h1> Installation Steps </h1>
+<h1> ⚙️ Project Steps </h1>
 
 ## Step 1️⃣: Using Remote Desktop Protocol (RDP)
 
