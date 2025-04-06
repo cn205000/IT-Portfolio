@@ -27,7 +27,7 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-<h1> ⚙️ Project Steps </h1>
+<h1> ⚙️ Project Steps ⚙️ </h1>
 
 # 🏗️ Creating Organizational Units (OUs) & Security Groups
 
