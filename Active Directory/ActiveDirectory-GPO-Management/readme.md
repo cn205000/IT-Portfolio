@@ -49,10 +49,9 @@
 ### Step 2️⃣: Create Security Groups
 
 1. In **ADUC**, navigate to the OU where you want to create the group (e.g., **IT**).
-2. Right-click inside the OU → Click **New** → Select **Group**.
-3. Name the group (for example, **IT-Admins**).
-4. Set **Group scope** to **Global** and **Group type** to **Security**.
-5. Click **OK** to create the group.
+2. Right-click inside the OU → Click **New** → Select **Group** & name the group (for example, **IT-Admins**).
+3. Set **Group scope** to **Global** and **Group type** to **Security**.
+4. Click **OK** to create the group.
    (*create more groups for each department*)
 
 > 📌 *Why?* Security groups are used to assign permissions and apply Group Policies to sets of users.
@@ -83,15 +82,14 @@
 
 ## Step 1️⃣: Editing the Default Domain Policy & Enforcing Strong Password Policies
 Open **Group Policy Management** on the Domain Controller.
-1. Expand your domain in GPMC.
-2. Locate **Default Domain Policy** → Right-click → **Edit**.
-3. Navigate to:
+1. Expand your domain in GPMC, Locate **Default Domain Policy** → Right-click → **Edit**.
+2. Navigate to:
   Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
-🔹 Configure the following under Password Policy:
-4. **Enforce password history**: 24 passwords remembered
-5. **Maximum password age**: 90 days
-6. **Minimum password length**: 12 characters
-7. **Password must meet complexity requirements**: Enabled
+3. Configure the following under Password Policy:
+  - **Enforce password history**: 24 passwords remembered
+  - **Maximum password age**: 90 days
+  - **Minimum password length**: 12 characters
+  - **Password must meet complexity requirements**: Enabled
    
 📌 **Why?** Helps prevent unauthorized access by enforcing strong password practices for anyone under the domain.
 
@@ -102,11 +100,10 @@ Open **Group Policy Management** on the Domain Controller.
 <br>
 
 ## Step 2️⃣: Enforcing Group Policy Settings for Specific Departments
-1. In GPMC, go to the **IT-Admins** group.
-2. Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
-3. Right-click → Edit GPO:
+1. In GPMC, go to the **IT-Admins** group, Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
+2. Right-click → Edit GPO:
   - Computer Configuration → Windows Settings → Security Settings → Local Policies → User Rights Assignment
-4. Grant these permissions to **IT-Admins, Administrators** group:
+3. Grant these permissions to **IT-Admins, Administrators** group:
   - Log on locally
   - Allow log on through Remote Desktop Services
 
@@ -121,7 +118,7 @@ Open **Group Policy Management** on the Domain Controller.
 
 ## Step 2️⃣.1️⃣: Restrict Access for Finance group:
 1. Link a new GPO to the **Finance** OU. Name it **Finance-Restricted Policy**.
-2. Right-click Edit GPO
+2. Right-click → Edit GPO
 3. Prevent CMD access:
     User Configuration → Policies → Administrative Templates → System → Prevent access to the command prompt → Enabled
         ✅ Apply the Policy 
@@ -146,8 +143,8 @@ Open **Group Policy Management** on the Domain Controller.
 
 ## Step 3️⃣: Confirm Changes
 1. Log in as Finance user on Client VM
-2. CMD should be blocked.
-3. The C: drive access is hidden.
+2. Try to open the CMD, it should be blocked.
+3. Open File Explorer and look for the C: drive; access should be hidden.
 
 <br>
 <br>
