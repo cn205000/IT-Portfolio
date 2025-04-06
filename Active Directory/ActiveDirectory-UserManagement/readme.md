@@ -68,10 +68,9 @@
 
 1. Open **ADUC** → Right-click on the **Users** container → **New > User**.
 2. Enter the user's **First and Last Name**.
-3. Set an initial password.
-4. Uncheck **"Password never expires"**.
-5. Keep **"User must change password at next logon"** unchecked! (We're only doing this for RDP Issues)
-6. Click **Next**, then **Finish**.
+3. Set an initial password & uncheck **"Password never expires"**.
+4. Keep **"User must change password at next logon"** unchecked! (We're only doing this for RDP Issues)
+5. Click **Next**, then **Finish**.
 
 > 📌 *Why?* Simulates onboarding a new employee with standard domain-level access.
 
