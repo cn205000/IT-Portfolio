@@ -24,7 +24,7 @@
 
 ## ‼️ *Prerequsite Steps* ‼️
 
-### Step 1️⃣:  Remote Desktop 
+### Step 1️⃣: Using Remote Desktop 
 1. Windows search for **Remote Desktop Connection** to connect to your **Windows 10 Virtual Machine**.
 2. Under *Computer*, put in the **Windows 10 Virtual Machine IP Address**.
 3. Connect & input your Windows 10 VM **Account Info**
@@ -32,8 +32,9 @@
 
 
 ### Step 2️⃣: Install Wireshark on Windows VM  
-1. Within your **Windows 10 VM**, download and install **Wireshark**.  
-2. Launch **Wireshark** and begin a **packet capture** session.
+1. Within your **Windows 10 VM**, go to **Microsoft Edge** then download and install **Windows X64 Installer** from *wireshark.org/download.html*  
+2. Go through the Wizard, clickin *Next* & *Install* until the wizard is finished.
+3. Launch **Wireshark** & click on **Ethernet** to begin a session.
 
 
 
