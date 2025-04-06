@@ -52,14 +52,13 @@
 
 ## Step 3️⃣: Create the Domain Controller (DC)  
 
-1. Under the Azure Portal, go to **Virtual Machines**.
-2. **Create a Virtual Machine (VM)** under the same **Resource Group**.  
-3. Name the VM **Domain-Controller** and ensure it is in the **same region & zone**.  
-4. Select the OS version: **Windows Server 2022 Datacenter Hotpatch x64 Gen2**.  
-5. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
-6. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
-7. ***Navigate*** to **Networking** and **ensure** this VM is on the newly created **VNET**.  
-8. Click **Create** to deploy the Domain Controller.  
+1. Under the Azure Portal, go to **Virtual Machines** & **Create a Virtual Machine (VM)** under the same **Resource Group**.  
+2. Name the VM **Domain-Controller** and ensure it is in the **same region & zone**.  
+3. Select the OS version: **Windows Server 2022 Datacenter Hotpatch x64 Gen2**.  
+4. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
+5. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
+6. ***Navigate*** to **Networking** and **ensure** this VM is on the newly created **VNET**.  
+7. Click **Create** to deploy the Domain Controller.  
 
 <p>
 <img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="DC Creation">
@@ -88,10 +87,9 @@
 ## Step 5️⃣: Change Domain Controller's NIC to Static  
 
 1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
-2. Click on **Networking** > **Network Settings**.  
-3. Click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
-4. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
-5. Click **Save** to apply the changes.  
+2. Click on **Networking** > **Network Settings** & click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
+3. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
+4. Click **Save** to apply the changes.  
 
 > 📌 **Why?** A static IP ensures the Domain Controller is always reachable by clients and services within the network.
 
@@ -109,9 +107,8 @@
 1. Click on the **Domain Controller's VM** and copy the **Private IP Address** under **Properties**.
 2. Go to the **Client's VM** > **Networking** > **Network Settings**.
 3. Click on the **NIC** (labeled **Network Interface / IP Configuration**).
-4. Under **Settings** > **DNS Servers**.
-5. Click on **DNS servers** and set it to **Custom**, then paste the **Domain Controller's private IP** and click **Save**.
-6. Restart the **Client's VM** to ensure the NIC settings have been applied.
+4. Under **Settings** > **DNS Servers**, Set **DNS servers** to **Custom** & paste the **Domain Controller's private IP** and **Save**.
+5. Restart the **Client's VM** to ensure the NIC settings have been applied.
    
 > 📌 **Why?** Pointing the client’s DNS to the Domain Controller allows proper domain name resolution and enables domain-related services to function correctly.
 
