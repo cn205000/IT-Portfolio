@@ -51,6 +51,3 @@
 4. Complete the configuration and click **Review + Create** → **Create**.
 
 <br>
-
-## ✅ Step 4️⃣: Verify Network Configuration  
-- Confirm **both VMs are in the same Virtual Network and Subnet** to enable communication between them.
