@@ -1,4 +1,4 @@
-<h1> ☁️ Setting Up a Domain Environment in Azure </h1>
+<h1> Traffic Monitoring Between Two Azure VMs with Wireshark </h1>
 
 ## ✅ Project Task Summary
 
@@ -11,10 +11,18 @@
 ## 📌 Prerequisites
 - 🔐 Microsoft Azure Account (Free or Paid)
 - 🌐 Internet connection
-- 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
+- ✅ Have gone through & finished the previous project in the repository.
+- 💻 **Remote Desktop Protocol (RDP)** access.
+- 🧠 Basic Understanding of:
+  - ICMP protocol and ping functionality
+  - **Network Security Groups (NSGs)**
   
 ## 🔗 Enviroments & Technologies Used 
 -  **Microsoft Azure**
+-  **Windows 10 Pro VM**
+-  **Linux VM (ubuntu 22.04)**
+-  **Remote Desktop Protocol**
+-  **Wireshark**
 
 ## 🎥 Video Demonstration
 
@@ -22,76 +30,80 @@
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
-## Step 1️⃣: Create a Resource Group  
+## Step 1️⃣: Using Remote Desktop Protocol (RDP)
 
-1. In the **Azure Portal**, go to **Resource Groups**.  
-2. Click **+ Create** and name it Azure-DC-Setup.  
-3. Choose the correct **region** (Make sure all resources match this region).  
-4. Click **Review + Create**, then **Create**.  
+1. In Azure, open your **Windows VM** and copy its **Public IP Address**.
+2. On your local machine, search for and open **Remote Desktop Connection**.
+3. Paste the copied IP into the **Computer** field.
+4. Enter the **Windows VM username**, click **Connect**, and log in.
+
 
 <p>
-<img src="https://imgur.com/ALp3vCX.png" height="65%" width="65%" alt="RG Creation">
+<img src="https://imgur.com/JclDJbE.png" height="90%" width="90%" alt="RDP">
 </p>
 
 <br>
 <br>
 
-## Step 2️⃣: Create a Virtual Network (VNET)  
+## Step 2️⃣: Installing Wireshark on Windows VM 
 
-1. On the Azure Portal, go to **Virtual Networks** & hit create.
-2. Ensure the VNET is created under the correct **Resource Group**.  
-3. Name the VNET and select the **same region** as your other resources.  
-4. Click **Create** to finalize the setup.
- 
+1. After connecting to the **Windows VM**, open **Microsoft Edge**.
+2. Go to: www.wireshark.org/#downloadLink
+3. Download the **Windows x64 Installer**, launch it, and install using the default settings.
+
 <p>
-<img src="https://imgur.com/rjS0CS4.png" height="50%" width="50%" alt="VNET Creation">
+<img src="https://imgur.com/VAInGnm.png" height="90%" width="90%" alt="Wireshark Installation">
 </p>
 
 <br>
 <br>
 
-## Step 3️⃣: Create the Domain Controller (DC)  
+## Step 3️⃣: Capturing ICMP Traffic in Wireshark
 
-1. Under the Azure Portal, go to **Virtual Machines** & **Create a Virtual Machine (VM)** under the same **Resource Group**.  
-2. Name the VM **Domain-Controller** and ensure it is in the **same region & zone**.  
-3. Select the OS version: **Windows Server 2022 Datacenter Hotpatch x64 Gen2**.  
-4. Choose a size of **2 vCPUs** (if grayed out, try a different availability zone).
-5. **Create login credentials** (For better security, avoid weak passwords and document strong credentials).  
-6. ***Navigate*** to **Networking** and **ensure** this VM is on the newly created **VNET**.  
-7. Click **Create** to deploy the Domain Controller.  
+1. On the **Windows VM**, open **Wireshark** via the Start menu.
+2. Select the **Ethernet interface**, then in the filter bar type: icmp & press **Enter** to apply the filter.
+3. In Azure, locate your **Linux VM** and copy its **Private IP address**.
+4. Back on the **Windows VM**, open **PowerShell** and run: ping <Linux Private IP>
+5. You should immediately see ICMP ping traffic appear in **Wireshark**.
+
 
 <p>
-<img src="https://imgur.com/K5tdnW3.png" height="20%" width="50%" alt="DC Creation">
+<img src="https://imgur.com/A7yqmNX.png" height="70%" width="70%" alt="Pinging LinuxVM">
 </p>
 
 <br>
 <br>
 
-## Step 4️⃣: Create the Client VM  
+## Step 4️⃣: Block ICMP Traffic Using NSG Rules
 
-1. **Create a new Virtual Machine (VM)** under the same **Resource Group**.  
-2. Name the VM **Client** and ensure it is in the **same region & zone**.  
-3. Select the OS version: **Windows 10 Pro 22H2**.  
-4. Choose a size of **2 vCPUs** (adjust based on workload).  
-5. **Create login credentials** & **check off the licencing box** (For better security, avoid weak passwords and document strong credentials).  
-6. Navigate to **Networking** and ensure the VM is on the newly created **VNET**.  
-7. Click **Create** to deploy the Client VM.  
+1.  On the **Windows VM**, run a continuous ping to the **Linux VM** using: ping <Linux Private IP> -t
+2. In Azure, go to the **Linux VM** > **Networking** > **Network Settings**.
+3. Under *Essentials*, click on the **Network Security Group (NSG)**.
+4. Navigate to **Settings** > **Inbound Security Rules** → Click **Add**.
+5. Set the following values:  
+  - **Destination Port Ranges**: `*`  
+  - **Protocol**: `ICMP`  
+  - **Action**: `Deny`  
+  - **Priority**: `290`  
+  → Then click **Add**.
+6. Return to the **Windows VM** and observe that the ping requests should begin timing out.
+7. Once verified, return to the **Linux VM** NSG and **delete the ICMP Deny rule** to restore connectivity.
+8. On Powershell, press **Ctrl + C** to stop the pereptual ping.
 
 <p>
-<img src="https://imgur.com/CO3c8ik.png" height="20%" width="50%" alt="Client-VM Creation">
+<img src="https://imgur.com/vzhjzj9.png" height="80%" width="80%" alt="Blocking ICMP Traffic">
 </p>
 
 <br>
 <br>
 
-## Step 5️⃣: Change Domain Controller's NIC to Static  
+## Step 5️⃣: Observing SSH Traffic
 
 1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
 2. Click on **Networking** > **Network Settings** & click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
 3. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
 4. Click **Save** to apply the changes.  
 
-> 📌 **Why?** A static IP ensures the Domain Controller is always reachable by clients and services within the network.
 
 <br>
 
@@ -110,7 +122,6 @@
 4. Under **Settings** > **DNS Servers**, Set **DNS servers** to **Custom** & paste the **Domain Controller's private IP** and **Save**.
 5. Restart the **Client's VM** to ensure the NIC settings have been applied.
    
-> 📌 **Why?** Pointing the client’s DNS to the Domain Controller allows proper domain name resolution and enables domain-related services to function correctly.
 
 <br>
 
