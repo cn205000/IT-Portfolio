@@ -25,6 +25,10 @@
 1. In the Azure Portal, navigate to **Resource Groups**.  
 2. Click **Create**, enter a name, choose a region, then click **Review + Create** → **Create**.
 
+<p>
+<img src="https://imgur.com/DXPxCjA.png" height="35%" width="35%" alt="RG Creation">
+</p>
+
 <br>
 
 ## Step 2️⃣: Create a Windows 10 Virtual Machine (VM)  
@@ -36,6 +40,10 @@
 3. In the **Networking** tab:  
    - Note the **Virtual Network (VNET)** and **Subnet** that's automatically created.  
 4. Complete the configuration and click **Review + Create** → **Create**.
+
+<p>
+<img src="https://imgur.com/HFnUwht.png" height="40%" width="40%" alt="Windows Creation">
+</p>
 
 <br>
 
@@ -49,5 +57,9 @@
 3. In the **Networking** tab:  
    - Select the **same Virtual Network and Subnet** used by the Windows VM.  
 4. Complete the configuration and click **Review + Create** → **Create**.
+
+<p>
+<img src="https://imgur.com/NzJ71jA.png" height="40%" width="40%" alt="Linux Creation">
+</p>
 
 <br>
