@@ -36,6 +36,9 @@
 2. On your local machine, search for and open **Remote Desktop Connection**.
 3. Paste the copied IP into the **Computer** field.
 4. Enter the **Windows VM username**, click **Connect**, and log in.
+    📌 *Why?*
+*Establishing a secure RDP connection allows remote access and management of the Windows VM to perform network monitoring tasks.*
+
 
 
 <p>
@@ -50,6 +53,10 @@
 1. After connecting to the **Windows VM**, open **Microsoft Edge**.
 2. Go to: www.wireshark.org/#downloadLink
 3. Download the **Windows x64 Installer**, launch it, and install using the default settings.
+📌 *Why?*
+*Wireshark provides the tools needed to capture and analyze network traffic for deeper inspection of communication between VMs.*
+
+
 
 <p>
 <img src="https://imgur.com/VAInGnm.png" height="90%" width="90%" alt="Wireshark Installation">
@@ -65,7 +72,8 @@
 3. In Azure, locate your **Linux VM** and copy its **Private IP address**.
 4. Back on the **Windows VM**, open **PowerShell** and run: ping <Linux Private IP>
 5. You should immediately see ICMP ping traffic appear in **Wireshark**.
-
+📌 *Why?*
+*Capturing ICMP traffic verifies basic network connectivity between two VMs and validates that packets are successfully transmitted.*
 
 <p>
 <img src="https://imgur.com/A7yqmNX.png" height="70%" width="70%" alt="Pinging LinuxVM">
@@ -90,6 +98,11 @@
 7. Once verified, return to the **Linux VM** NSG and **delete the ICMP Deny rule** to restore connectivity.
 8. On Powershell, press **Ctrl + C** to stop the pereptual ping.
 
+📌 *Why?*
+*Blocking ICMP traffic demonstrates how network security groups (NSGs) can control communication and protect cloud resources.*
+
+
+
 <p>
 <img src="https://imgur.com/vzhjzj9.png" height="80%" width="80%" alt="Blocking ICMP Traffic">
 </p>
@@ -99,10 +112,14 @@
 
 ## Step 5️⃣: Observing SSH Traffic
 
-1. **Go to the Domain Controller's VM** in the **Azure Portal**.  
-2. Click on **Networking** > **Network Settings** & click on the **NIC** at the top (labeled **Network Interface / IP Configuration**).  
-3. Click on **ipconfig** and **change the Private IP address setting** from **Dynamic** to **Static**.  
-4. Click **Save** to apply the changes.  
+1. In **Wireshark**, apply a filter for `ssh`.
+2. On the **Windows 10 VM**, open **PowerShell** and connect to the **Linux VM** using:  ssh linuxUsername@<Linux Private IP>
+3. When prompted, type `yes` to continue and enter the **Linux VM password** to establish the connection.
+4. Once connected, run:  uname -a (to retrieve Linux OS details—observe the corresponding SSH traffic in Wireshark.)
+5. Click on any SSH packet in Wireshark; the payload will appear encrypted, demonstrating secure communication because of SSH.
+
+📌 *Why?*
+*Observing SSH traffic highlights the importance of encrypted communication when remotely managing servers.*
 
 
 <br>
@@ -114,18 +131,5 @@
 <br>
 <br>
 
-# Step 6️⃣: Change the Client's DNS Server IP to the Domain Controller's Private IP
 
-1. Click on the **Domain Controller's VM** and copy the **Private IP Address** under **Properties**.
-2. Go to the **Client's VM** > **Networking** > **Network Settings**.
-3. Click on the **NIC** (labeled **Network Interface / IP Configuration**).
-4. Under **Settings** > **DNS Servers**, Set **DNS servers** to **Custom** & paste the **Domain Controller's private IP** and **Save**.
-5. Restart the **Client's VM** to ensure the NIC settings have been applied.
-   
-
-<br>
-
-<p>
-<img src="https://imgur.com/Qoz4tqO.png" height="40%" width="50%" alt="DNS IP Change">
-</p>
 
