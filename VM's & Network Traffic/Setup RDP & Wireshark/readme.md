@@ -36,14 +36,16 @@
 2. On your local machine, search for and open **Remote Desktop Connection**.
 3. Paste the copied IP into the **Computer** field.
 4. Enter the **Windows VM username**, click **Connect**, and log in.
-    📌 *Why?*
-*Establishing a secure RDP connection allows remote access and management of the Windows VM to perform network monitoring tasks.*
+
 
 
 
 <p>
 <img src="https://imgur.com/JclDJbE.png" height="90%" width="90%" alt="RDP">
 </p>
+
+ 📌 *Why?*
+*Establishing a secure RDP connection allows remote access and management of the Windows VM to perform network monitoring tasks.*
 
 <br>
 <br>
@@ -53,14 +55,16 @@
 1. After connecting to the **Windows VM**, open **Microsoft Edge**.
 2. Go to: www.wireshark.org/#downloadLink
 3. Download the **Windows x64 Installer**, launch it, and install using the default settings.
-📌 *Why?*
-*Wireshark provides the tools needed to capture and analyze network traffic for deeper inspection of communication between VMs.*
+
 
 
 
 <p>
 <img src="https://imgur.com/VAInGnm.png" height="90%" width="90%" alt="Wireshark Installation">
 </p>
+
+📌 *Why?*
+*Wireshark provides the tools needed to capture and analyze network traffic for deeper inspection of communication between VMs.*
 
 <br>
 <br>
@@ -72,12 +76,14 @@
 3. In Azure, locate your **Linux VM** and copy its **Private IP address**.
 4. Back on the **Windows VM**, open **PowerShell** and run: ping <Linux Private IP>
 5. You should immediately see ICMP ping traffic appear in **Wireshark**.
-📌 *Why?*
-*Capturing ICMP traffic verifies basic network connectivity between two VMs and validates that packets are successfully transmitted.*
 
 <p>
 <img src="https://imgur.com/A7yqmNX.png" height="70%" width="70%" alt="Pinging LinuxVM">
 </p>
+
+📌 *Why?*
+*Capturing ICMP traffic verifies basic network connectivity between two VMs and validates that packets are successfully transmitted.*
+
 
 <br>
 <br>
@@ -98,14 +104,14 @@
 7. Once verified, return to the **Linux VM** NSG and **delete the ICMP Deny rule** to restore connectivity.
 8. On Powershell, press **Ctrl + C** to stop the pereptual ping.
 
-📌 *Why?*
-*Blocking ICMP traffic demonstrates how network security groups (NSGs) can control communication and protect cloud resources.*
-
 
 
 <p>
 <img src="https://imgur.com/vzhjzj9.png" height="80%" width="80%" alt="Blocking ICMP Traffic">
 </p>
+
+📌 *Why?*
+*Blocking ICMP traffic demonstrates how network security groups (NSGs) can control communication and protect cloud resources.*
 
 <br>
 <br>
@@ -118,8 +124,7 @@
 4. Once connected, run:  uname -a (to retrieve Linux OS details—observe the corresponding SSH traffic in Wireshark.)
 5. Click on any SSH packet in Wireshark; the payload will appear encrypted, demonstrating secure communication because of SSH.
 
-📌 *Why?*
-*Observing SSH traffic highlights the importance of encrypted communication when remotely managing servers.*
+
 
 
 <br>
@@ -127,6 +132,9 @@
 <p>
 <img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
 </p>
+
+📌 *Why?*
+*Observing SSH traffic highlights the importance of encrypted communication when remotely managing servers.*
 
 <br>
 <br>
