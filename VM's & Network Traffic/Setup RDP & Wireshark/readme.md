@@ -2,10 +2,9 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Create a Resource Group 
-- [ ] Deploy a VNET
-- [ ] Generating a Domain Controller & Client VM
-- [ ] Configuring VM Settings for Domain use
+- [ ] Use RDP
+- [ ] Install Wireshark on Windows VM
+- [ ] Capture, Block & Observe traffic 
 
 
 ## 📌 Prerequisites
@@ -107,7 +106,7 @@
 
 
 <p>
-<img src="https://imgur.com/vzhjzj9.png" height="80%" width="80%" alt="Blocking ICMP Traffic">
+<img src="https://imgur.com/vzhjzj9.png" height="90%" width="90%" alt="Blocking ICMP Traffic">
 </p>
 
 📌 *Why?*
@@ -119,9 +118,9 @@
 ## Step 5️⃣: Observing SSH Traffic
 
 1. In **Wireshark**, apply a filter for `ssh`.
-2. On the **Windows 10 VM**, open **PowerShell** and connect to the **Linux VM** using:  ssh linuxUsername@<Linux Private IP>
-3. When prompted, type `yes` to continue and enter the **Linux VM password** to establish the connection.
-4. Once connected, run:  uname -a (to retrieve Linux OS details—observe the corresponding SSH traffic in Wireshark.)
+2. On the **Windows 10 VM**, open **PowerShell** and connect to the **Linux VM** using:  ssh *linuxUsername*@*Linux Private IP*
+3. **If** prompted, type `yes` to continue, then enter the **Linux VM password** to establish the connection.
+4. Once connected, run:  uname -a (to retrieve Linux OS details. Observe the SSH traffic in Wireshark that appears from this command.)
 5. Click on any SSH packet in Wireshark; the payload will appear encrypted, demonstrating secure communication because of SSH.
 
 
@@ -130,7 +129,7 @@
 <br>
 
 <p>
-<img src="https://imgur.com/tec1xN3.png" height="40%" width="50%" alt="NIC Change">
+<img src="https://imgur.com/0eT2p0c.png" height="120%" width="120%" alt="SSH Traffic">
 </p>
 
 📌 *Why?*
