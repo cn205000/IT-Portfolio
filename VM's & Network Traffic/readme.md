@@ -10,7 +10,7 @@
 
 # 📌 **Projects in this Repository**
 
-## 1️⃣ [**Deploying Windows & Linux VMs in the Same Azure Network**](https://github.com/cn205000/IT-Portfolio/tree/main/VM's%20%26%20Network%20Traffic/Creating-VMs-Within-Azure *(Click to View)*
+## 1️⃣ [**Deploying Windows & Linux VMs in the Same Azure Network**](https://github.com/cn205000/IT-Portfolio/tree/main/VM's%20%26%20Network%20Traffic/Creating-VMs-Within-Azure) *(Click to View)*
 - 🔹 Creating a **Resource Group** in Azure to host VM infrastructure
 - 🔹 Deploying **Windows 10** and **Linux (Ubuntu)** virtual machines into the **same Virtual Network & Subnet**
 - 🔹 Understanding **VNET association** and **inter-VM communication**
