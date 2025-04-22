@@ -1,42 +1,51 @@
-# Virtual Machines & Network Traffic Analysis Lab
+# 🏢 VM's & Network Traffic Portfolio
 
-This folder contains tasks related to setting up **virtual machines** and performing **network traffic analysis** using tools like **Wireshark**.
+## Showcasing Real-World Active Directory Deployments & Management
 
-## 📝 Tasks
+###  My projects below contain step-by-step guides and configurations for setting up and managing **Active Directory, Group Policy, User Management, and more!** 
+---
 
-### 1. **Creating a Virtual Machine with Azure**  
-   - Created a **virtual machine** in **Microsoft Azure**.  
-   - Configured the VM with appropriate resources and security settings.  
-   - Connected the VM to the network and tested accessibility.
+<br>
 
-### 2. **Using Remote Desktop Protocol (RDP)**  
-   - Configured **RDP** for remote access to the VM.  
-   - Connected to the VM using RDP and performed tasks from the virtual desktop.
+# 📌 **Projects in this Repository**  
 
-### 3. **Installing Wireshark & Observing Traffic**  
-   - Installed **Wireshark** on the virtual machine.  
-   - Captured and analyzed **network traffic** to observe communication between the VM and other network devices.  
-   - Learned to use Wireshark filters to isolate specific traffic patterns and protocol analysis.
+## 1️⃣ [**Domain Server Creation In Azure**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Azure-Domain-Setup)    *(Click to View)*  
+- 🔹 Creating an **Active Directory Domain Services (AD DS) environment** on **Azure Virtual Machines**  
+- 🔹 Configuring **VNETs, DNS, Static IPs, and Firewall Rules**   
 
-## 🖼 Screenshots
+## 2️⃣ [**Active Directory Domain Controller Setup**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-DomainSetup) *(Click to View)*  
+- 🔹 Joining a **Windows Client VM to the Domain** 
+- 🔹 Setting up a **Domain Controller & Active Directory** on a **local Virtual Machine (VM)**  
+- 🔹 Connecting a Client VM to the Domain & Testing Connectivity
 
-![VM in Azure](./screenshots/azure-vm.png)  
-*Creating a virtual machine in Microsoft Azure.*
+## 3️⃣ [**Active Directory User Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-UserManagement) *(Click to View)*  
+- 🔹 Creating **Users** & Configuring **Elevated Permissions**
+- 🔹 Using **Day-To-Day Help Desk User Management**
+- 🔹 Testing new User Abilities
 
-![Wireshark Traffic Capture](./screenshots/wireshark-traffic.png)  
-*Observing network traffic in Wireshark.*
+## 4️⃣ [**Active Directory Group Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-GPO-Management) *(Click to View)*  
+- 🔹 Creating Organizational Units to organize users and computers
+- 🔹 Creating Security Groups within department OUs
+- 🔹 Enforcing department-specific GPOs to manage permissions like RDP, local logon rights & Password Policies
+- 🔹 Confirming GPO enforcement by testing user restrictions
+- 🔹 Creating a logon script to map the shared folder as a network drive
+- 🔹 Testing to confirm the applied Policies
 
-## 🔗 Resources
+---
 
-- [Microsoft Azure Documentation](https://azure.microsoft.com/en-us/documentation/)
-- [Wireshark Documentation](https://www.wireshark.org/docs/)
-- [LinkedIn Profile](https://www.linkedin.com/in/colby-nelson-330511303)
+## 💡 **Why This Portfolio?**  
 
-## 📚 What I Learned
-- Gained hands-on experience in setting up and managing **virtual machines** in **Microsoft Azure**.  
-- Learned how to configure **RDP** and connect to VMs remotely for administrative tasks.  
-- Developed skills in **network traffic analysis** using Wireshark, including protocol and packet analysis.
+✔️ **Hands-on Experience** – Real-world AD configurations that IT professionals use in production  
+✔️ **Step-by-Step Guides** – Clear, structured instructions for replication in your lab  
+✔️ **Automation & Efficiency** – Leveraging **Scripts & Group Policies** to streamline IT administration  
+✔️ **Security-Focused** – Best practices for securing an **Active Directory** environment  
 
-## 🏁 Next Steps
-Next, I plan to explore advanced **network security** concepts and use **Wireshark** for deeper network analysis, including **identifying vulnerabilities** and potential threats.
 
+---
+
+## 🚀 **Next Steps**  
+
+💾 **Clone this repo** and try setting up an AD environment yourself!  
+📖 **Explore each project** and follow the step-by-step documentation  
+
+---
