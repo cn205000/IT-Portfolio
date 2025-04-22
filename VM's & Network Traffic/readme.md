@@ -1,51 +1,41 @@
-# 🏢 VM's & Network Traffic Portfolio
+# 💻 VM & Network Portfolio
 
-## Showcasing Real-World Active Directory Deployments & Management
+## Showcasing Real-World Virtual Machine Deployment, Networking, and Traffic Monitoring
 
-###  My projects below contain step-by-step guides and configurations for setting up and managing **Active Directory, Group Policy, User Management, and more!** 
+### This portfolio includes step-by-step projects demonstrating how to configure Azure virtual machines, create shared networks, and monitor traffic between systems using Wireshark and NSGs.
+
 ---
 
 <br>
 
-# 📌 **Projects in this Repository**  
+# 📌 **Projects in this Repository**
 
-## 1️⃣ [**Domain Server Creation In Azure**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/Azure-Domain-Setup)    *(Click to View)*  
-- 🔹 Creating an **Active Directory Domain Services (AD DS) environment** on **Azure Virtual Machines**  
-- 🔹 Configuring **VNETs, DNS, Static IPs, and Firewall Rules**   
+## 1️⃣ [**Deploying Windows & Linux VMs in the Same Azure Network**](https://github.com/cn205000/IT-Portfolio/tree/main/VM's%20%26%20Network%20Traffic/Creating-VMs-Within-Azure *(Click to View)*
+- 🔹 Creating a **Resource Group** in Azure to host VM infrastructure
+- 🔹 Deploying **Windows 10** and **Linux (Ubuntu)** virtual machines into the **same Virtual Network & Subnet**
+- 🔹 Understanding **VNET association** and **inter-VM communication**
 
-## 2️⃣ [**Active Directory Domain Controller Setup**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-DomainSetup) *(Click to View)*  
-- 🔹 Joining a **Windows Client VM to the Domain** 
-- 🔹 Setting up a **Domain Controller & Active Directory** on a **local Virtual Machine (VM)**  
-- 🔹 Connecting a Client VM to the Domain & Testing Connectivity
-
-## 3️⃣ [**Active Directory User Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-UserManagement) *(Click to View)*  
-- 🔹 Creating **Users** & Configuring **Elevated Permissions**
-- 🔹 Using **Day-To-Day Help Desk User Management**
-- 🔹 Testing new User Abilities
-
-## 4️⃣ [**Active Directory Group Management**](https://github.com/cn205000/IT-Portfolio/tree/main/Active%20Directory/ActiveDirectory-GPO-Management) *(Click to View)*  
-- 🔹 Creating Organizational Units to organize users and computers
-- 🔹 Creating Security Groups within department OUs
-- 🔹 Enforcing department-specific GPOs to manage permissions like RDP, local logon rights & Password Policies
-- 🔹 Confirming GPO enforcement by testing user restrictions
-- 🔹 Creating a logon script to map the shared folder as a network drive
-- 🔹 Testing to confirm the applied Policies
+## 2️⃣ [**Monitoring Network Traffic Between Azure VMs with Wireshark**](https://github.com/cn205000/IT-Portfolio/tree/main/VM's%20%26%20Network%20Traffic/Traffic-Monitoring-With-Wireshark) *(Click to View)*
+- 🔹 Using **Remote Desktop Protocol (RDP)** to access the Windows VM
+- 🔹 Installing and using **Wireshark** to capture and analyze ICMP and SSH traffic
+- 🔹 Demonstrating **NSG (Network Security Group) rules** to block/allow communication
+- 🔹 Validating **encrypted SSH connections** using packet inspection
 
 ---
 
-## 💡 **Why This Portfolio?**  
+## 💡 **Why This Portfolio?**
 
-✔️ **Hands-on Experience** – Real-world AD configurations that IT professionals use in production  
-✔️ **Step-by-Step Guides** – Clear, structured instructions for replication in your lab  
-✔️ **Automation & Efficiency** – Leveraging **Scripts & Group Policies** to streamline IT administration  
-✔️ **Security-Focused** – Best practices for securing an **Active Directory** environment  
-
+✔️ **Hands-On Azure Experience** – Demonstrates essential cloud infrastructure setup using Microsoft Azure  
+✔️ **Network Monitoring & Security** – Showcases traffic analysis between VMs using industry-standard tools  
+✔️ **Step-by-Step Guides** – Easy-to-follow walkthroughs replicable in your own lab environment  
+✔️ **Cloud Networking Concepts** – Learn about **VNETs, NSGs, IP protocols**, and cross-VM access  
 
 ---
 
-## 🚀 **Next Steps**  
+## 🚀 **Next Steps**
 
-💾 **Clone this repo** and try setting up an AD environment yourself!  
-📖 **Explore each project** and follow the step-by-step documentation  
+💾 **Clone this repo** and try these labs yourself using your own Azure account!  
+📖 **Explore each project folder** for detailed documentation, screenshots, and configurations  
+🔍 **Expand this portfolio** with NAT rules, load balancers, firewalls, or multi-subnet deployments!
 
 ---
