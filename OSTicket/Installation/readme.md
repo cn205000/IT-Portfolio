@@ -1,4 +1,4 @@
-<h1> 🌐 Setting Up Windows & Linux Virtual Machines in the Same Network </h1>
+<h1> 🌐 OSTicket Installation with Prerequisites </h1>
 
 ## ✅ Project Task Summary
 
