@@ -58,17 +58,17 @@
 
 ## Step 4️⃣: Installing OSTicket Prerequisites 
 
-1. On the windows VM open this link on Edge, download & extract this file onto your desktop: [OSTicket Installation Files](https://drive.google.com/file/d/118z3d-o9Oyom8FgGzbJe2iBiIVB3s1Th/view?usp=sharing)
-2. Open the search bar, open up "Turn Windows Features On or Off". Check off & expand "Internet Information Services" then follow this: World Wide Web Services -> Application Development Features -> [X] CGI then hit OK.
-3. Go back to the **OSTicket Installation Files**, Open, run & click through **PHPManagerForIIS** & **rewrite_amd64** executable. 
-4. Open File explorer, click on **This PC** then **Windows (C:)** & create a new folder named **PHP**.
-5. Go back to the **OSTicket Installation Files** & right-click extract the **php-7.3.8-nts-Win32** zipped folder into the new **PHP** Folder.
-6. Open the **OSTicket Installation Files** & install the **VC_redist.x86** executable.
-7. From the **osTicket-Installation-Files** folder, install **MySQL 5.5.62**
-Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configuration -> Username: root Password: root *(login info is for simplicity of project)*
-8. Type & open on the windows search, **IIS** *(Internet Information Services)* as admin. Open **PHP Manager** & click **Register new PHP version**, browse the file explorer for the **C:\PHP** Directory then register **php-cgi**
-9. Within **IIS** under **Connections** on the left, right-click on your VMs name then stop & start to restart the web server.
-
+1. On the **Windows VM**, open **Edge**, download & extract the [OSTicket Installation Files](https://drive.google.com/file/d/118z3d-o9Oyom8FgGzbJe2iBiIVB3s1Th/view?usp=sharing) onto your desktop.
+2. Windows search for **"Turn Windows Features On or Off"**. Open it & expand **Internet Information Services (IIS)** → World Wide Web Services → Application Development Features → check **CGI**, then click **OK**.
+3. In the **OSTicket Installation Files**, run and install **PHPManagerForIIS** and **rewrite_amd64**.
+4. In **File Explorer**, go to **This PC → C:** and create a new folder named **PHP**.
+5. Extract **php-7.3.8-nts-Win32** into the newly created **PHP** folder.
+6. Install **VC_redist.x86** from the **OSTicket Installation Files**.
+7. Install **MySQL 5.5.62**:
+   - Choose **Typical Setup** → Launch Configuration Wizard → Standard Configuration.
+   - Set **Username: root** **Password: root** (for simplicity in this project).
+8. Open **IIS Manager** as Administrator → In **PHP Manager**, click **Register new PHP version** → Browse to **C:\PHP\php-cgi.exe** and register it.
+9. In **IIS**, right-click the VM's name under **Connections** → **Start & Stop** to apply all changes.
  
 
 <p>
@@ -79,23 +79,28 @@ Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configu
 
 
 ## Step 5️⃣: OSTicket Installation
-1. Open **OSTicket-Installation-Files**, right-click & extract the OSTicket zipped folder into the same folder.
-2. In another File Explorer application, navigate to **This PC** -> **inetpub** -> **wwwroot**
-3. Back In the **OSTicket-Installation-Files**, open the unzipped **OSTicket** Folder, copy the **Upload** Folder, paste it into the **wwwroot** folder & rename it to "osTicket"
-4. In **IIS**, stop & start the web server again the expand **Sites** -> **Default Web Site** -> **osTicket**. Click on **osTicket** & under **Manage Folder** on the right side, open **Browse:80**
-5. Go back to IIS, sites -> Default -> osTicket. Double-click PHP Manager & Click “Enable or disable an extension”. Right click and enable these extensions: 
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-6. From: **C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php** in file explorer, rename **ost-sampleconfig.php** -> **ost-config.php**.
-7. Right-click **ost-config.php** -> **Properties** -> **Security** -> **Advanced** -> **Disable Inheritance** -> **Remove all permissions** -> **add** -> **Select a Principle** -> Type **Everyone** -> **OK & Full Control** -> **Apply**
-8. Open the **OSTicket Web Server** & Continue. Fill out the **System Settings & Admin User** prompts. (*Note your admins username & password*)
-9. Open **OSTicket-Installation-Files** & install **HeidiSQL Setup**. Click through the default prompts & Finish.
-10. In **HeidiSQL** click **New**. For user & password, enter our **SQL username & password** from earlier then **open**. (*Username: root Password: root*)
-11. In **HeidiSQL**, right-click unnamed -> **Create New** -> **database**. Name it **osTicket**.
-12. Under **Database settings** in the **OSTicket Web server**, Enter as follows: MySQL Database: osTicket  MySQL Username: root  MySQL Password: root
-13. Install!
-
+1. In the **OSTicket Installation Files**, extract the **OSTicket** zipped folder.
+2. Open **File Explorer** → **This PC → (C:) → inetpub → wwwroot**.
+3. Copy the **Upload** folder in the exetracted **OSTicket** zipped folder → Paste it into **wwwroot** → Rename it to **osTicket**.
+4. In **IIS**, restart the server → Expand **Sites → Default Web Site → osTicket** → Click **osTicket** → On the right panel, click **Browse:80** to open it in the browser.
+5. Enable required PHP Extensions in IIS:
+   - Double-click **PHP Manager** → **Enable or Disable an Extension** → Right-click and enable:
+     - **php_imap.dll**
+     - **php_intl.dll**
+     - **php_opcache.dll**
+6. Rename the file at **C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php** → **ost-config.php**.
+7. Modify **ost-config.php** permissions:
+   - Right-click → **Properties → Security → Advanced → Disable Inheritance → Remove all permissions → Add** → Select **Everyone → Grant Full Control → Apply**.
+8. Refresh the **osTicket Web Installer** page → Fill in **System Settings** and **Admin User** information (note the credentials).
+9. Install **HeidiSQL** from the **OSTicket Installation Files** (default setup).
+10. In **HeidiSQL**:
+    - Click **New** → Enter **Username: root** and **Password: root** → Click **Open**.
+11. Right-click the unnamed connection → **Create New → Database** → Name it **osTicket**.
+12. On the **osTicket Web Installer**, input:
+    - **MySQL Database:** osTicket
+    - **MySQL Username:** root
+    - **MySQL Password:** root
+13. Click **Install!** 🎉
 
 <p>
 <img src="https://imgur.com/XOezo7q.png" height="90%" width="90%" alt="RDP">
