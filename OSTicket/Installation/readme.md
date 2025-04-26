@@ -92,4 +92,11 @@ Enable: php_opcache.dll
 8. Open the **OSTicket Web Server** & Continue. Fill out the **System Settings & Admin User** prompts. (*Note your admins username & password*)
 9. Open **OSTicket-Installation-Files** & install **HeidiSQL Setup**. Click through the default prompts & Finish.
 10. In **HeidiSQL** click **New**. For user & password, enter our **SQL username & password** from earlier then **open**. (*Username: root Password: root*)
-11. 
+11. In **HeidiSQL**, right-click unnamed -> **Create New** -> **database**. Name it **osTicket**.
+12. Under **Database settings** in the **OSTicket Web server**, Enter as follows: MySQL Database: osTicket  MySQL Username: root  MySQL Password: root
+13. Install!
+
+
+<p>
+<img src="https://imgur.com/XOezo7q.png" height="90%" width="90%" alt="RDP">
+</p>
