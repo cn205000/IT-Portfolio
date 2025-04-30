@@ -2,9 +2,9 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Create a Windows 10 VM & RDP into the VM
-- [ ] Configure Prerequisites for osTicket
-- [ ] Install osTicket 
+- Create a Windows 10 VM & RDP into the VM
+- Configure Prerequisites for osTicket
+- Install osTicket 
 
 
 ## 📌 Prerequisites
