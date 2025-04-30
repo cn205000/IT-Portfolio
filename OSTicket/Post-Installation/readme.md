@@ -8,7 +8,7 @@
 
 ## 📌 Prerequisites
 - 🌐 Internet connection
-- ✅ Have osTicket installed on a Windows VM
+- ✅ Have gone through & finished the previous project in the repository.
   
 ## 🔗 Enviroments & Technologies Used 
 -  **Windows 10 VM**
