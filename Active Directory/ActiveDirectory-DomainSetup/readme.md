@@ -2,10 +2,10 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Connect to VMs Using RDP
-- [ ] Configure the Domain Controller within the Virtual Windows Server Machine
-- [ ] Disable Domain Firewall & Test Connection to Domain Controller
-- [ ] Configure Client VM Settings for Domain use
+- Connect to VMs Using RDP
+- Configure the Domain Controller within the Virtual Windows Server Machine
+- Disable Domain Firewall & Test Connection to Domain Controller
+- Configure Client VM Settings for Domain use
 
 ## 📌 Prerequisites
 - 🌐 Internet connection
