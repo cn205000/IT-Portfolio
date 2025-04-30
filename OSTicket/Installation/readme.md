@@ -1,18 +1,20 @@
-<h1> 🌐 OSTicket Installation with Prerequisites </h1>
+<h1> 🌐 osTicket Installation with Prerequisites </h1>
 
 ## ✅ Project Task Summary
 
-- [ ] Creating a Resource Group 
-- [ ] Generating a Windows & Linux VM
+- [ ] Create a Windows 10 VM & RDP into the VM
+- [ ] Configure Prerequisites for osTicket
+- [ ] Install osTicket 
 
 
 ## 📌 Prerequisites
 - 🔐 Microsoft Azure Account (Free or Paid)
 - 🌐 Internet connection
-- 🧠 Basic understanding of networking concepts
+- 🧠 Basic understanding/intuition of a Windows 10 OS
   
 ## 🔗 Enviroments & Technologies Used 
 -  **Microsoft Azure**
+-  **Windows 10 VM**
 
 ## 🎥 Video Demonstration
 
