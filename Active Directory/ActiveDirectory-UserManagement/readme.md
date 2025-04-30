@@ -2,9 +2,9 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Create Users
-- [ ] Configure User Privileges
-- [ ] Manage User Accounts
+- Create Users
+- Configure User Privileges
+- Manage User Accounts
 
 ## 📌 Prerequisites
 - 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
