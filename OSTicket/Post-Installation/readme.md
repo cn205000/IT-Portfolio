@@ -2,8 +2,8 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Staff Configuration
-- [ ] SLA Configuration
+- Staff Configuration
+- SLA Configuration
 
 
 ## 📌 Prerequisites
