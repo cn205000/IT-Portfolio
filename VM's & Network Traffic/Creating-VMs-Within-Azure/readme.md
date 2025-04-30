@@ -2,8 +2,8 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Creating a Resource Group 
-- [ ] Generating a Windows & Linux VM
+- Creating a Resource Group 
+- Generating a Windows & Linux VM
 
 
 ## 📌 Prerequisites
