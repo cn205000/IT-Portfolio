@@ -7,12 +7,10 @@
 
 
 ## 📌 Prerequisites
-- 🔐 Microsoft Azure Account (Free or Paid)
 - 🌐 Internet connection
 - ✅ Have osTicket installed on a Windows VM
   
 ## 🔗 Enviroments & Technologies Used 
--  **Microsoft Azure**
 -  **Windows 10 VM**
 -  **osTicket**
 ## 🎥 Video Demonstration
