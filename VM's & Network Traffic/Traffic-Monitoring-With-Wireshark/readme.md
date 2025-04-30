@@ -2,9 +2,9 @@
 
 ## ✅ Project Task Summary
 
-- [ ] Use RDP
-- [ ] Install Wireshark on Windows VM
-- [ ] Capture, Block & Observe traffic 
+- Use RDP
+- Install Wireshark on Windows VM
+- Capture, Block & Observe traffic 
 
 
 ## 📌 Prerequisites
