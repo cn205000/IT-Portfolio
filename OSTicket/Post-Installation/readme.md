@@ -17,92 +17,105 @@
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-<h1> ⚙️ Project Steps ⚙️ </h1>
+<h1> ⚙️ osTicket Configuring ⚙️ </h1>
 
 
-## Step 1️⃣: Configuring Roles
- *Roles are for group permissions. We can add or edit a role to give/deny access for certain permissions for a whole group of people.*
- <br>
-1. Login to [Admin Control Panel](http://localhost/osTicket/scp/login.php ) & click on Admin Panel in top right.
-2. **Admin Panel -> Agents -> Roles**
-3. Click **Add New Role** & name it *Supreme Admin*, then click on **Permissions** 
-4. Under *tickets*, *Tasks*, & *Knowledgebase* we can check off every box.
-   <br>
-   (For a *Supreme Admin*, we'd want them to be able to manage everything)
+## 1️⃣: Roles
 
+*Roles define what permissions a group of agents has. You can create or edit roles to allow or restrict access across different areas of the helpdesk.*
 
-<p>
-<img src="" height="35%" width="35%" alt="RG Creation">
-</p>
-
-<br>
-
-## Step 2️⃣: Configuring Departments
-*Departments are used to organize incoming tickets by a group/team. Departments represent certain groups, like a "Support Department," and help route the ticket to the correct staff.*
-<br>
-1. **Admin Panel -> Agents -> Departments**
-2. Click **Add New Department**. Fill out & Create:
-   - Parent: Support
-   - Name: SysAdmins
-
-  *Most of these settings are self-explanatory if you'd like to delve deeper.*
+1. Log in to the [Admin Control Panel](http://localhost/osTicket/scp/login.php) and click **Admin Panel** in the top-right corner.
+2. Go to **Admin Panel → Agents → Roles**.
+3. Click **Add New Role**, name it **Supreme Admin**, then click the **Permissions** tab.
+4. Under **Tickets**, **Tasks**, and **Knowledgebase**, check all boxes to give full access.  
+   *(A Supreme Admin should have control over everything.)*
 
 <p>
-<img src="" height="40%" width="40%" alt="Windows Creation">
+<img src="https://imgur.com/li5othi.png" height="80%" width="80%" alt="Roles Example">
 </p>
 
+---
 
-## Step 3️⃣: Configuring Teams
-*Teams are for making a "Team" of agents from different groups. Certain IT-level support could be on a team for an online banking system.*
-<br>
-1. **Admin Panel -> Agents -> Departments**
-2. Click **Add New Team**. Fill out & Create:
-   - Name: Online Banking
+## 2️⃣: Departments
 
-*we can pre-add members to this team under the "Members" tab*
+*Departments organize and route tickets to the appropriate group or team, such as a “Support” or “SysAdmin” department.*
 
-   
+1. Go to **Admin Panel → Agents → Departments**.
+2. Click **Add New Department** and fill in the following:
+   - **Parent:** Support  
+   - **Name:** SysAdmins  
+   *(Other options can be adjusted as needed.)*
+
 <p>
-<img src="" height="90%" width="90%" alt="RDP">
+<img src="https://imgur.com/h3EWsqe.png" height="80%" width="80%" alt="Department Example">
 </p>
 
+---
 
-## Step 4️⃣: Configuring Agents
-*Let's create agents for the Online banking team we made earlier*
-<br>
-1. Admin Panel -> Agents -> Add New Agent
-2. Fill out fake info for two imaginary agents 
-3. Click **Set Password**, **Uncheck** 'Send Password reset email' & 'Require Password change' & set a password.
-4. For their properties, assign these:
-   <br>
+## 3️⃣: Teams
+
+*Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).*
+
+1. Go to **Admin Panel → Agents → Teams**.
+2. Click **Add New Team** and name it **Online Banking**.
+3. After creating the team, use the **Members** tab to add agents to it.
+
+<p>
+<img src="https://imgur.com/tC6Qjhw.png" height="90%" width="90%" alt="Team Example">
+</p>
+
+---
+
+## 4️⃣: Agents
+
+*Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams.*
+
+1. Go to **Admin Panel → Agents → Add New Agent**.
+2. Create two test agents with made-up names and emails.
+3. Set their passwords manually:
+   - Click **Set Password**
+   - Uncheck **Send password reset email** and **Require password change**
+4. Assign the following:
+
 - **Agent One**
-   - Access: **Support / SysAdmins** with **All Access**
-   - Teams: **Online Banking**
-   <br>
+  - Department Access: **Support / SysAdmins** with **All Access**
+  - Team: **Online Banking**
+
 - **Agent Two**
-   - Access: **Support** with **Limited Access**
-   - Teams: **Online Banking**
+  - Department Access: **Support** with **Limited Access**
+  - Team: **Online Banking**
+
 <p>
-<img src="" height="90%" width="90%" alt="RDP">
+<img src="https://imgur.com/Y3ll9Jg.png" height="60%" width="60%" alt="Agent Example">
+</p>
+
+---
+
+## 5️⃣: Users
+
+*Users are the people who submit support tickets — typically customers or clients.*
+
+1. Go to **Agent Panel → Users → Add New**.
+2. Fill in fake user details to simulate a real support ticket.
+
+<p>
+<img src="https://imgur.com/LqV8kMp.png" height="90%" width="90%" alt="User Example">
+</p>
+
+---
+
+## 6️⃣: SLA (Service Level Agreements)
+
+*SLAs define how quickly tickets should be responded to or resolved based on priority.*
+
+1. Go to **Admin Panel → Manage → SLA**.
+2. Create the following SLAs:
+   - **Sev-A**: 1-hour grace period, 24/7 schedule  
+   - **Sev-B**: 4-hour grace period, 24/7 schedule  
+   - **Sev-C**: 8-hour grace period, business hours only
+
+<p>
+<img src="https://imgur.com/geXtlEu.png" height="90%" width="90%" alt="SLA Example">
 </p>
 
 
-
-
-## Step 5️⃣: Configuring Users
-1. 
-
-
-<p>
-<img src="" height="90%" width="90%" alt="RDP">
-</p>
-
-## Step 6️⃣: Configuring SLA
-1.
-
-
-
-
-<p>
-<img src="" height="90%" width="90%" alt="RDP">
-</p>
