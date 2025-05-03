@@ -2,19 +2,26 @@
 
 ## ✅ Project Task Summary
 
-- Create a Windows 10 VM & RDP into the VM
-- Configure Prerequisites for osTicket
-- Install osTicket 
-
+- Create a Windows 10 VM in Azure and connect via RDP  
+- Configure all required osTicket prerequisites (IIS, PHP, MySQL, PHP extensions)  
+- Install and configure osTicket web application  
 
 ## 📌 Prerequisites
-- 🔐 Microsoft Azure Account (Free or Paid)
-- 🌐 Internet connection
-- 🧠 Basic understanding/intuition of a Windows 10 OS
-  
-## 🔗 Enviroments & Technologies Used 
--  **Microsoft Azure**
--  **Windows 10 VM**
+
+- 🔐 Microsoft Azure Account 
+- 🌐 Internet connection  
+- 💻 Remote Desktop Client (RDP)  
+- 🧠 Basic understanding of Windows OS, and file system navigation  
+
+## 🔗 Environments & Technologies Used
+
+- **Microsoft Azure**  
+- **Windows 10 Virtual Machine**  
+- **IIS (Internet Information Services)**  
+- **PHP NTS for Windows**  
+- **MySQL**  
+- **HeidiSQL**  
+- **osTicket**
 
 ## 🎥 Video Demonstration
 
