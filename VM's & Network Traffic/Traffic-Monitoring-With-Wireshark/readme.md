@@ -1,27 +1,27 @@
-<h1> Traffic Monitoring Between Two Azure VMs with Wireshark </h1>
+<h1> 🌐 Traffic Monitoring Between Two Azure VMs with Wireshark </h1>
 
 ## ✅ Project Task Summary
-
-- Use RDP
-- Install Wireshark on Windows VM
-- Capture, Block & Observe traffic 
-
+ 
+- Use RDP to connect to the Windows VM  
+- Install and configure Wireshark for traffic monitoring  
+- Capture, block, and analyze ICMP and SSH traffic between VMs  
 
 ## 📌 Prerequisites
-- 🔐 Microsoft Azure Account (Free or Paid)
-- 🌐 Internet connection
-- ✅ Have gone through & finished the previous project in the repository.
-- 💻 **Remote Desktop Protocol (RDP)** access.
-- 🧠 Basic Understanding of:
-  - ICMP protocol and ping functionality
-  - **Network Security Groups (NSGs)**
-  
-## 🔗 Enviroments & Technologies Used 
--  **Microsoft Azure**
--  **Windows 10 Pro VM**
--  **Linux VM (ubuntu 22.04)**
--  **Remote Desktop Protocol**
--  **Wireshark**
+
+- 🔐 Microsoft Azure Account  
+- 🌐 Stable internet connection  
+- ✅ Completion of the previous VM provisioning project 
+- 🧠 Basic understanding of:
+  - **ICMP** and **SSH** protocols  
+  - **Azure**  
+
+## 🔗 Environments & Technologies Used 
+
+- **Microsoft Azure**  
+- **Windows 10 Pro VM**  
+- **Ubuntu 22.04 Linux VM**  
+- **Wireshark**  
+- **Remote Desktop Protocol (RDP)**  
 
 ## 🎥 Video Demonstration
 
