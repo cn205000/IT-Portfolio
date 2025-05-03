@@ -70,7 +70,7 @@ Note down the agents login info for future use.*
 
 - **Agent Two**
   - Department Access: **Support** with **Expanded Access**
-  - Team: **Online Banking**
+  - Team: **Level I Support**
 
 <p>
 <img src="https://imgur.com/Y3ll9Jg.png" height="60%" width="60%" alt="Agent Example">
