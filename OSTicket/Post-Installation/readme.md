@@ -69,7 +69,7 @@
 ## 4️⃣: Agents
 
 *Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams. 
-Note down the agent login info for future use.*
+Note down the Support agent login info for future use.*
 
 1. Go to **Admin Panel → Agents → Add New Agent**.
 2. Create two test agents with made-up names and emails.
