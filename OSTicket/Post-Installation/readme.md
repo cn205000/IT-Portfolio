@@ -18,7 +18,7 @@
 ## 🔗 Environments & Technologies Used 
 
 - **Windows 10 VM**
-- **osTicket Helpdesk System**
+- **osTicket**
 - **Web Browser**
 
 ## 🎥 Video Demonstration
