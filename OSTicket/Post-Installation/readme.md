@@ -2,20 +2,29 @@
 
 ## ✅ Project Task Summary
 
-- Staff Configuration
-- SLA Configuration
-
+- Configure agent roles and access permissions
+- Create departments and assign responsibilities
+- Add test agents and users
+- Form agent teams based on support needs
+- Set up SLA (Service Level Agreements) for ticket prioritization
 
 ## 📌 Prerequisites
+
 - 🌐 Internet connection
-- ✅ Have gone through & finished the previous project in the repository.
-  
-## 🔗 Enviroments & Technologies Used 
--  **Windows 10 VM**
--  **osTicket**
+- ✅ Completed osTicket installation and basic setup (Previous Project)
+- 💻 Windows 10 VM with a functional osTicket instance
+- 🧠 Basic Intuition of ticketing workflows and support roles
+
+## 🔗 Environments & Technologies Used 
+
+- **Windows 10 VM**
+- **osTicket Helpdesk System**
+- **Web Browser**
+
 ## 🎥 Video Demonstration
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+
 
 <h1> ⚙️ osTicket Configuring ⚙️ </h1>
 
