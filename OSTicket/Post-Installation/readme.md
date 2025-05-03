@@ -42,7 +42,7 @@
 
 1. Go to **Admin Panel → Agents → Departments**.
 2. Click **Add New Department** and fill in the following:
-   - **Parent:** Support  
+   - **Parent:** Top-Level Department  
    - **Name:** SysAdmins  
    *(Other options can be adjusted as needed.)*
 
