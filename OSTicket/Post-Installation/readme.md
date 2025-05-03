@@ -68,7 +68,8 @@
 
 ## 4️⃣: Agents
 
-*Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams.*
+*Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams. 
+Note down the agent login info for future use.*
 
 1. Go to **Admin Panel → Agents → Add New Agent**.
 2. Create two test agents with made-up names and emails.
@@ -93,7 +94,7 @@
 
 ## 5️⃣: Users
 
-*Users are the people who submit support tickets — typically customers or clients.*
+*Users are the people who submit support tickets — typically customers or clients. Note down the User login info for future use.*
 
 1. Go to **Agent Panel → Users → Add New**.
 2. Fill in fake user details to simulate a real support ticket.
