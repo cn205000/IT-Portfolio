@@ -105,6 +105,23 @@ Note down the Support agent login info for future use.*
 
 ---
 
+## 3️⃣: Teams
+
+*Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).*
+
+1. Go to **Admin Panel → Agents → Teams**.
+2. Click **Add New Team** and name it **Online Banking**. Do the same with **Level I Support**.
+3. After creating the team, use the **Members** tab to add agents to it.
+   Add:
+   - SysAdmins + Admin to **Online Banking**
+   - Support to **Level I Support**
+
+<p>
+<img src="https://imgur.com/tC6Qjhw.png" height="90%" width="90%" alt="Team Example">
+</p>
+
+---
+
 ## 6️⃣: SLA (Service Level Agreements)
 
 *SLAs define how quickly tickets should be responded to or resolved based on priority.*
