@@ -83,7 +83,7 @@ Note down the Support agent login info for future use.*
   - Team: **Online Banking**
 
 - **Agent Two**
-  - Department Access: **Support** with **Limited Access**
+  - Department Access: **Support** with **Expanded Access**
   - Team: **Online Banking**
 
 <p>
