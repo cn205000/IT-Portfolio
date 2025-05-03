@@ -52,21 +52,7 @@
 
 ---
 
-## 3️⃣: Teams
-
-*Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).*
-
-1. Go to **Admin Panel → Agents → Teams**.
-2. Click **Add New Team** and name it **Online Banking**.
-3. After creating the team, use the **Members** tab to add agents to it.
-
-<p>
-<img src="https://imgur.com/tC6Qjhw.png" height="90%" width="90%" alt="Team Example">
-</p>
-
----
-
-## 4️⃣: Agents
+## 3️⃣: Agents
 
 *Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams. 
 Note down the Support agent login info for future use.*
@@ -92,7 +78,7 @@ Note down the Support agent login info for future use.*
 
 ---
 
-## 5️⃣: Users
+## 4️⃣: Users
 
 *Users are the people who submit support tickets — typically customers or clients. Note down the User login info for future use.*
 
@@ -105,7 +91,7 @@ Note down the Support agent login info for future use.*
 
 ---
 
-## 3️⃣: Teams
+## 5️⃣: Teams
 
 *Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).*
 
