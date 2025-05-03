@@ -2,22 +2,26 @@
 
 ## ✅ Project Task Summary
 
-- Creating a Resource Group 
-- Generating a Windows & Linux VM
-
+- Create a Resource Group in Azure  
+- Deploy both Windows and Linux Virtual Machines  
+- Connect both VMs to the same Virtual Network for seamless communication  
 
 ## 📌 Prerequisites
-- 🔐 Microsoft Azure Account (Free or Paid)
-- 🌐 Internet connection
-- 🧠 Basic understanding of networking concepts
-  
-## 🔗 Enviroments & Technologies Used 
--  **Microsoft Azure**
+
+- 🔐 Microsoft Azure Account (Free or Paid)  
+- 🌐 Stable internet connection  
+- 🧠 Basic understanding of virtual machines and networking  
+
+## 🔗 Environments & Technologies Used 
+
+- **Microsoft Azure**  
+- **Windows 10 Pro VM**  
+- **Ubuntu Server 22.04 VM**  
 
 ## 🎥 Video Demonstration
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
+  
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
 
