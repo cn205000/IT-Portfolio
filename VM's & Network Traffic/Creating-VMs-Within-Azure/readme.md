@@ -26,6 +26,9 @@
 
 
 ## Step 1️⃣: Create a Resource Group  
+
+>📌 *Why?* A Resource Group helps organize and manage all the related resources for your project in one place.
+
 1. In the Azure Portal, navigate to **Resource Groups**.  
 2. Click **Create**, enter a name, choose a region, then click **Review + Create** → **Create**.
 
@@ -36,6 +39,9 @@
 <br>
 
 ## Step 2️⃣: Create a Windows 10 Virtual Machine (VM)  
+
+>📌 *Why?* This VM will act as the client system for testing connections and monitoring network traffic.
+
 1. Go to **Virtual Machines** in Azure and click **Create** → **Azure Virtual Machine**.  
 2. Under the **Basics** tab:  
    - Select the **previously created Resource Group**.
@@ -52,6 +58,9 @@
 <br>
 
 ## Step 3️⃣: Create a Linux (Ubuntu) Virtual Machine (VM)  
+
+>📌 *Why?* The Linux VM acts as the second system in the network, allowing you to simulate communication between two machines.
+
 1. Go to **Virtual Machines** and click **Create** → **Azure Virtual Machine**.  
 2. Under the **Basics** tab:  
    - Select the **same Resource Group** used earlier.
