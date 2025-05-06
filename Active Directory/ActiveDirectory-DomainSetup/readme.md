@@ -34,6 +34,8 @@
 
 ## Step 1️⃣: Using Remote Desktop Protocol (RDP)
 
+>📌 *Why?* RDP lets you securely connect and control your Domain Controller from your local computer.
+
 1. Go to your **Domain Controller VM** on Azure and copy the **Public IP Address**.
 2. On the Windows search bar, search for **Remote Desktop Connection** and open it.
 3. Paste the IP into the box labeled **Computer**.
@@ -47,6 +49,8 @@
 <br>
 
 ## Step 2️⃣: Configuring the Domain Controller (DC)
+
+>📌 *Why?* This turns the server into a Domain Controller, which manages users, computers, and domain security for the network.
 
 1. On the DC VM, open **Server Manager**.
 2. Click **Add Roles & Features** > Next > Next > Next.
@@ -67,6 +71,8 @@
 
 ## Step 3️⃣: Disable Firewall on DC (for testing/ping)
 
+>📌 *Why?* Disabling the firewall allows easier network testing, like pings during setup (not recommended for production).
+
 1. Open Run in Windows search, type wf.msc, and press Enter.
 2. Click **Windows Firewall Properties** (top of the left panel).
 3. For **Domain, Private, and Public Profiles**, set **Firewall State** to **Off**.
@@ -81,14 +87,14 @@
 
 ## Step 4️⃣: Test Connection from Client VM
 
+>📌 *Why?* Verifying DNS and ping ensures the Client VM can communicate with the DC before trying to join the domain.
+
 1. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
 2. Open **PowerShell** and run:  
    ping <DC_Private_IP> (We should see that all packets were sent and received).
 3. Run:  
    ipconfig /all
  (Look for "DNS Server"; it should be linked to the DC's private IP)
-
-> 📌 *Why?* We need to confirm it’s using the DC’s DNS Server & connected properly.
 
 
 <p>
@@ -99,6 +105,8 @@
 <br>
 
 ## Step 5️⃣: Join Client VM to Domain
+
+>📌 *Why?* Joining the domain connects the client to the centralized management system handled by the Domain Controller.
 
 1. Log into the **Client VM** as the local Administrator, then open **System Properties** (type 'Run' then sysdm.cpl).
 2. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., mydomain.com).
@@ -113,6 +121,8 @@
 <br>
 
 ## Step 6️⃣: Allow Domain Users to Use RDP
+
+>📌 *Why?* This lets regular domain users connect to the Client VM via Remote Desktop after joining the domain.
 
 1. Reconnect to the **Client VM** using the **DC admin account**.
 2. Open **System Properties** (type 'Run' then sysdm.cpl)
