@@ -32,6 +32,8 @@
 
 ## Step 1️⃣: Creating an Admin User in Active Directory
 
+> 📌 *Why?* This establishes an admin account with elevated privileges for managing users and AD settings.
+
 1. Open **Active Directory Users and Computers (ADUC)** by running dsa.msc.
 2. Right-click your domain in ADUC, go to New > Organizational Unit, and name it _ADMINS for Domain Admins.
 3. Right-click the newly created OU and select **New > User**.
@@ -40,7 +42,7 @@
 6. Uncheck **"User must change password at next logon"** (for admin accounts).
 7. Click **Next**, then **Finish**.
 
-> 📌 *Why?* This establishes an admin account with elevated privileges for managing users and AD settings.
+
 <p>
 <img src="https://imgur.com/gJK152u.png" height="75%" width="75%" alt="RDP">
 </p>
@@ -50,11 +52,12 @@
 
 ## Step 2️⃣: Assigning Admin Privileges
 
+> 📌 *Why?* Adding the user to the Domain Admins group gives them full administrative rights over Active Directory.
+
 1. Right-click the new user (e.g. ITAdmin01) → **Properties**.
 2. Go to the **Member Of** tab → Click **Add**.
 3. Type **Domain Admins**, then click **Apply** → **OK**.
 
-> 📌 *Why?* Adding the user to the **Domain Admins** group gives them full administrative rights over Active Directory.
 
  
 <p>
@@ -66,13 +69,15 @@
 
 ## Step 3️⃣: Creating a Standard User (New Employee)
 
+> 📌 *Why?* Simulates onboarding a new employee with standard domain-level access.
+
 1. Open **ADUC** → Right-click on the **Users** container → **New > User**.
 2. Enter the user's **First and Last Name**.
 3. Set an initial password & uncheck **"Password never expires"**.
 4. Keep **"User must change password at next logon"** unchecked! (We're only doing this for RDP Issues)
 5. Click **Next**, then **Finish**.
 
-> 📌 *Why?* Simulates onboarding a new employee with standard domain-level access.
+
 
 <p>
 <img src="https://imgur.com/FF97f1z.png" height="30%" width="60%" alt="Firewall">
@@ -82,6 +87,8 @@
 <br>
 
 ## Step 4️⃣: Managing User Accounts (Day-to-Day IT Tasks)
+
+> 📌 *Why?* These are daily tasks for IT Help Desk & System Admins to maintain user access and security.
 
 1. Resetting Passwords
   - Right-click the user → **Reset Password** → Enter new password.
@@ -96,8 +103,6 @@
   - **Logon Hours** (set login time restrictions)
   - **Group Memberships** (adjust user permissions)
 
-> 📌 *Why?* These are daily tasks for IT Help Desk & System Admins to maintain user access and security.
-
 
 
 <p>
@@ -109,6 +114,8 @@
 
 ## Step 5️⃣: Verifying User Login & Password Policy
 
+📌 *Why?* This ensures users comply with password policies before accessing resources.
+
 1. On the **Client VM**, login as the **new user**.
 2. On the **Admin VM**, go to the **new user account** and select **"Reset password at next login"**.
 3. Back on the **Client VM**, open **Command Prompt** and run the following command to update Group Policy: *gpupdate /force*
@@ -116,5 +123,5 @@
 5. Attempt to **log in again** with the new user’s credentials.
 6. The system will prompt the user to **change their password**.
 
-📌 **Why?** This ensures users comply with password policies before accessing resources.
+
 
