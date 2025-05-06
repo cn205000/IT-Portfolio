@@ -31,7 +31,7 @@
 
 ## 1️⃣: Roles
 
-*Roles define what permissions a group of agents has. You can create or edit roles to allow or restrict access across different areas of the helpdesk.*
+> 📌 *Why?* Roles define what permissions a group of agents has. You can create or edit roles to allow or restrict access across different areas of the helpdesk.
 
 1. Log in to the [Admin Control Panel](http://localhost/osTicket/scp/login.php) and click **Admin Panel** in the top-right corner.
 2. Go to **Admin Panel → Agents → Roles**.
@@ -47,7 +47,7 @@
 
 ## 2️⃣: Departments
 
-*Departments organize and route tickets to the appropriate group or team, such as a “Support” or “SysAdmin” department.*
+> 📌 *Why?* Departments organize and route tickets to the appropriate group or team, such as a “Support” or “SysAdmin” department.
 
 1. Go to **Admin Panel → Agents → Departments**.
 2. Click **Add New Department** and fill in the following:
@@ -63,8 +63,8 @@
 
 ## 3️⃣: Agents
 
-*Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams. 
-Note down the agents login info for future use.*
+> 📌 *Why?* Agents are your internal support staff. They handle tickets and can be assigned to departments, roles, and teams. 
+Note down the agents login info for future use.
 
 1. Go to **Admin Panel → Agents → Add New Agent**.
 2. Create two test agents with made-up names and emails.
@@ -89,7 +89,7 @@ Note down the agents login info for future use.*
 
 ## 4️⃣: Users
 
-*Users are the people who submit support tickets — typically customers or clients. Note down the User login info for future use.*
+> 📌 *Why?* Users are the people who submit support tickets — typically customers or clients. Note down the User login info for future use.
 
 1. Go to **Agent Panel → Users → Add New**.
 2. Fill in fake user details to simulate a real support ticket.
@@ -102,7 +102,7 @@ Note down the agents login info for future use.*
 
 ## 5️⃣: Teams
 
-*Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).*
+> 📌 *Why?* Teams are custom groups of agents from different departments, built to handle specialized ticket types (e.g., Online Banking issues).
 
 1. Go to **Admin Panel → Agents → Teams**.
 2. Click **Add New Team** and name it **Online Banking**. Do the same with **Level I Support**.
@@ -119,7 +119,7 @@ Note down the agents login info for future use.*
 
 ## 6️⃣: SLA (Service Level Agreements)
 
-*SLAs define how quickly tickets should be responded to or resolved based on priority.*
+> 📌 *Why?* SLAs define how quickly tickets should be responded to or resolved based on priority.
 
 1. Go to **Admin Panel → Manage → SLA**.
 2. Create the following SLAs:
