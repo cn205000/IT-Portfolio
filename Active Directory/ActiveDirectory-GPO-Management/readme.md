@@ -2,9 +2,9 @@
 
 ## ✅ Project Task Summary
 
-- Creating Organizational Units (OUs) & Security Groups
-- Configuring Active Directory Group Policies & Security Configuration:
-- Network Drive Mapping via Logon Script
+- Create Organizational Units (OUs) & Security Groups
+- Configure Active Directory Group Policies & Security Configuration:
+- Map a Network Drive via Logon Script
 
 ## 📌 Prerequisites
 - 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
