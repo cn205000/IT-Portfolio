@@ -4,8 +4,8 @@
 
 - Create a Resource Group 
 - Deploy a VNET
-- Generating a Domain Controller & Client VM
-- Configuring VM Settings for Domain use
+- Generate a Domain Controller & Client VM
+- Configure VM Settings for Domain use
 
 
 ## 📌 Prerequisites
