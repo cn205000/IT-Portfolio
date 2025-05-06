@@ -31,11 +31,3 @@
 ✔️ **Cloud Networking Concepts** – Learn about **VNETs, NSGs, IP protocols**, and cross-VM access  
 
 ---
-
-## 🚀 **Next Steps**
-
-💾 **Clone this repo** and try these labs yourself using your own Azure account!  
-📖 **Explore each project folder** for detailed documentation, screenshots, and configurations  
-🔍 **Expand this portfolio** with NAT rules, load balancers, firewalls, or multi-subnet deployments!
-
----
