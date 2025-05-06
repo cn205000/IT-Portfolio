@@ -37,11 +37,3 @@
 ✔️ **Ticketing System Experience** – Helps build confidence with managing IT support workflows
 
 ---
-
-## 🚀 **Next Steps**
-
-💾 **Clone this repo** and try setting up your own helpdesk environment  
-📖 **Explore each project** and walk through the full ticket lifecycle  
-🛠️ **Practice** with multiple roles and simulate real troubleshooting scenarios
-
----
