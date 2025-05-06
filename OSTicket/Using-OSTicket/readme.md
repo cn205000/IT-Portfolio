@@ -29,7 +29,9 @@
 
 
 ## 1️⃣: Creating a Ticket as an End-User
-*In this scenario, imagine a user is reporting that the company’s online banking system is down.*
+> 📌 *Why?* Creating a ticket simulates how real users report issues. It helps kick off the support process and gives agents the necessary information to respond.
+
+ > *In this scenario, imagine a user is reporting that the company’s online banking system is down.*
 
 1. Go to the [End-User osTicket Portal](http://localhost/osTicket) and click **Open A New Ticket**.
 2. Log in using the test user account created earlier.
@@ -47,6 +49,8 @@
 
 ## 2️⃣: Assigning the Ticket as a Support Agent
 
+> 📌 *Why?* Assigning the ticket and setting SLA ensures the right team sees it fast and knows how critical the issue is, helping with quicker response times.
+
 1. Log in to the [Admin Control Panel](http://localhost/osTicket/scp/login.php) as the support agent.
 2. Open the ticket and:
    - Set the **SLA Plan** to **Sev-A** (*High urgency—system-wide outage*).
@@ -62,7 +66,9 @@
 
 ## 3️⃣: Resolving the Ticket as Online Banking Support
 
-*Now act as the Online Banking agent responsible for resolving the issue.*
+>📌 *Why?* Acting as the specialist agent helps simulate how real IT support investigates, documents, and resolves issues in a structured way.
+
+> *Now act as the Online Banking agent responsible for resolving the issue.*
 
 1. Log out of the current agent account and log in as the **Online Banking Support Agent**.
 2. Open the ticket and comment your approach:
