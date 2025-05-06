@@ -42,10 +42,3 @@
 
 
 ---
-
-## 🚀 **Next Steps**  
-
-💾 **Clone this repo** and try setting up an AD environment yourself!  
-📖 **Explore each project** and follow the step-by-step documentation  
-
----
