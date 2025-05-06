@@ -1,41 +1,47 @@
-# osTicket Lab
+# 📨 osTicket Portfolio
 
-This folder contains tasks and activities I completed while working with **osTicket**, an open-source **help desk ticketing system**.
+## Showcasing Real-World IT Helpdesk Ticketing System Setup & Configuration
 
-## 📝 Tasks
+### My projects below walk through end-to-end setup, post-install configurations, and simulating real-world ticketing workflows using **osTicket**.
 
-### 1. **Installation**  
-   - Installed **osTicket** on a virtual machine.  
-   - Configured the web server (Apache) and database (MySQL) for osTicket.  
-   - Set up the **osTicket** system and verified successful installation.
+---
 
-### 2. **Post-Installation Configuration**  
-   - Configured **Email Piping** for ticket creation from emails.  
-   - Set up **user roles and permissions** to control access for agents and users.  
-   - Configured **ticket categories**, **priorities**, and **custom fields**.
+<br>
 
-### 3. **Using osTicket**  
-   - Created and managed **tickets** within the osTicket interface.  
-   - Assigned tickets to agents, set up **ticket filters**, and used the **dashboard** for monitoring and updates.
+# 📌 **Projects in this Repository**
 
-## 🖼 Screenshots
+## 1️⃣ [**osTicket Installation with Prerequisites**](https://github.com/cn205000/IT-Portfolio/tree/main/OSTicket/Installation) *(Click to View)*  
+- 🔹 Creating a **Windows 10 VM** in **Microsoft Azure**  
+- 🔹 Installing and configuring **IIS**, **PHP**, **MySQL**, and required **PHP extensions**  
+- 🔹 Installing and launching the **osTicket web application**
 
-![osTicket Dashboard](./screenshots/osticket-dashboard.png)  
-*Overview of osTicket dashboard.*
+## 2️⃣ [**osTicket Post-Installation Configuring**](https://github.com/cn205000/IT-Portfolio/tree/main/OSTicket/Post-Installation) *(Click to View)*  
+- 🔹 Creating **Roles**, **Agents**, and **Departments**  
+- 🔹 Building **Teams** and assigning members  
+- 🔹 Configuring **Service Level Agreements (SLAs)** for support ticket response standards  
+- 🔹 Adding **Users** and structuring access control
 
-![Ticket Creation](./screenshots/osticket-ticket.png)  
-*Creating a new support ticket in osTicket.*
+## 3️⃣ [**osTicket Ticket Cycle**](https://github.com/cn205000/IT-Portfolio/tree/main/osTicket/osTicket-TicketCycle) *(Click to View)*  
+- 🔹 Submitting a ticket as an **End-User**  
+- 🔹 Assigning and prioritizing the ticket as a **Support Agent**  
+- 🔹 Simulating ticket **resolution and workflow** across multiple roles and teams  
+- 🔹 Demonstrating the application of SLAs and internal communication
 
-## 🔗 Resources
+---
 
-- [osTicket Documentation](https://docs.osticket.com/)
-- [LinkedIn Profile](https://www.linkedin.com/in/colby-nelson-330511303)
+## 💡 **Why This Portfolio?**
 
-## 📚 What I Learned
-- Gained experience in **installing and configuring** osTicket in a server environment.  
-- Learned how to manage **support tickets**, agents, and user roles.  
-- Explored the functionality of **email piping** and automating ticket creation.
+✔️ **Hands-On Practice** – Walk-throughs for real-world osTicket administration and usage  
+✔️ **Step-by-Step Guides** – Easy to follow documentation with screenshots  
+✔️ **Workplace Simulation** – Mimics real helpdesk environments with roles, teams & escalations  
+✔️ **Ticketing System Experience** – Helps build confidence with managing IT support workflows
 
-## 🏁 Next Steps
-In future projects, I plan to explore **osTicket’s API** for automating ticket handling and further integration with other tools.
+---
 
+## 🚀 **Next Steps**
+
+💾 **Clone this repo** and try setting up your own helpdesk environment  
+📖 **Explore each project** and walk through the full ticket lifecycle  
+🛠️ **Practice** with multiple roles and simulate real troubleshooting scenarios
+
+---
