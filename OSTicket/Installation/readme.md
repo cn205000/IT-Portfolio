@@ -31,6 +31,10 @@
 
 
 ## Step 1️⃣: Create a Resource Group  
+
+>📌 *Why?* A resource group keeps all related resources (VMs, storage, network) organized under one container in Azure.
+
+
 1. In the Azure Portal, navigate to **Resource Groups**.  
 2. Click **Create**, enter a name, choose a region, then click **Review + Create** → **Create**.
 
@@ -41,6 +45,9 @@
 <br>
 
 ## Step 2️⃣: Create a Windows 10 Virtual Machine (VM)  
+
+>📌 *Why?* The Windows 10 VM will host the web server environment where osTicket will be installed.
+
 1. Go to **Virtual Machines** in Azure and click **Create** → **Azure Virtual Machine**.  
 2. Under the **Basics** tab:  
    - Select the **previously created Resource Group**.
@@ -55,6 +62,8 @@
 
 ## Step 3️⃣: Using Remote Desktop Protocol (RDP)
 
+>📌 *Why?* RDP lets you connect to and control the VM directly to install and configure software.
+
 1. In Azure, open your **Windows VM** and copy its **Public IP Address**.
 2. On your local machine, search for and open **Remote Desktop Connection**.
 3. Paste the copied IP into the **Computer** field.
@@ -66,6 +75,8 @@
 
 
 ## Step 4️⃣: Installing OSTicket Prerequisites 
+
+>📌 *Why?* These prerequisites (IIS, PHP, MySQL) are required to run osTicket as a functional web-based ticketing system.
 
 1. On the **Windows VM**, open **Edge**, download & extract the [OSTicket Installation Files](https://drive.google.com/file/d/118z3d-o9Oyom8FgGzbJe2iBiIVB3s1Th/view?usp=sharing) onto your desktop.
 2. Windows search for **"Turn Windows Features On or Off"**. Open it & expand **Internet Information Services (IIS)** → World Wide Web Services → Application Development Features → check **CGI**, then click **OK**.
@@ -88,6 +99,9 @@
 
 
 ## Step 5️⃣: OSTicket Installation
+
+>📌 *Why?* This step installs and launches osTicket, setting up the core helpdesk application for use and management.
+
 1. In the **OSTicket Installation Files**, extract the **OSTicket** zipped folder.
 2. Open **File Explorer** → **This PC → (C:) → inetpub → wwwroot**.
 3. Copy the **Upload** folder in the exetracted **OSTicket** zipped folder → Paste it into **wwwroot** → Rename it to **osTicket**.
