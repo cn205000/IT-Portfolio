@@ -65,8 +65,9 @@
 
 > 📌 *Why?* Group membership allows users to inherit permissions and settings from the group policies.
 
-1. Double-click the newly created group (e.g., **IT-Admins**) → Go to the **Members** tab.
-2. Click **Add**, type the usernames of users to include, then click **Check Names** and **OK**.
+1. Go to the **Default Users** & create random users for each department.
+2. Double-click the newly created group (e.g., **IT-Admins**) → Go to the **Members** tab.
+3. Click **Add**, type the usernames of users to include, then click **Check Names** and **OK**.
 
 
 <br>
@@ -111,9 +112,9 @@ Open **Group Policy Management** on the Domain Controller.
 
 1. In GPMC, go to the **IT-Admins** group, Right-click → **Create a GPO in this domain, and link it here** → Name: IT-Admin Policies.
 2. Right-click → Edit GPO:
-  - Computer Configuration → Windows Settings → Security Settings → Local Policies → User Rights Assignment
+  - Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → User Rights Assignment
 3. Grant these permissions to **IT-Admins, Administrators** group:
-  - Log on locally
+  - Allow Log on locally
   - Allow log on through Remote Desktop Services
 
 
@@ -135,7 +136,7 @@ Open **Group Policy Management** on the Domain Controller.
         ✅ Apply the Policy 
 
 4. Restrict access to the C: drive:
-    User Configuration → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
+    User Configuration → Administrative Templates → Windows Components → File Explorer → Hide specified drives in My Computer → Restrict C:
         ✅ Apply the Policy
 
 
@@ -149,13 +150,6 @@ Open **Group Policy Management** on the Domain Controller.
 <p>
 <img src="https://imgur.com/7wRJ9c6.png" height="85%" width="90%" alt="IT-ADMIN GP">
 </p>
-
-<br>
-
-## Step 3️⃣: Confirm Changes
-1. Log in as Finance user on Client VM
-2. Try to open the CMD, it should be blocked.
-3. Open File Explorer and look for the C: drive; access should be hidden.
 
 <br>
 
