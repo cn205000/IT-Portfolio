@@ -86,10 +86,14 @@
 
 >📌 *Why?* Verifying DNS and ping ensures the Client VM can communicate with the DC before trying to join the domain.
 
-1. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
-2. Open **PowerShell** and run:  
+
+RESTART DC FIRST
+
+1. Open Azure & navigate to your **Domain Controller**. Restart the VM to ensure the Firewall settings have been set.
+2. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
+3. Open **PowerShell** and run:  
    ping <DC_Private_IP> (We should see that all packets were sent and received).
-3. Run:  
+4. Run:  
    ipconfig /all
  (Look for "DNS Server"; it should be linked to the DC's private IP)
 
@@ -105,7 +109,7 @@
 
 >📌 *Why?* Joining the domain connects the client to the centralized management system handled by the Domain Controller.
 
-1. Log into the **Client VM** as the local Administrator, then open **System Properties** (type 'Run' then sysdm.cpl).
+1. On the **Client VM** open **System Properties** (type 'Run' then sysdm.cpl).
 2. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., mydomain.com).
 3. When prompted, enter **Domain Admin credentials** (the ones set during DC configuration).
 4. After confirmation, **restart the Client VM**. On reboot, log in using mydomain.com\YourUser.
