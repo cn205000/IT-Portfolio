@@ -35,7 +35,7 @@
 
 > 📌 *Why?* This establishes an admin account with elevated privileges for managing users and AD settings.
 
-1. Open **Active Directory Users and Computers (ADUC)** by running dsa.msc.
+1. Open **Active Directory Users and Computers (ADUC)** on your **Domain Controller** by running dsa.msc.
 2. Right-click your domain in ADUC, go to New > Organizational Unit, and name it _ADMINS for Domain Admins.
 3. Right-click the newly created OU and select **New > User**.
 4. Enter a name for the user (e.g., ITAdmin01).
