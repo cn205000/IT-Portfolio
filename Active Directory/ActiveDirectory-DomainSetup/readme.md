@@ -9,14 +9,11 @@
 
 ## 📌 Prerequisites
 - 🌐 Internet connection
-
 - 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
-
 - 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
-
 - 🔐 Microsoft Azure Account (Free or Paid)
-
-- 🔧 Have a Resource Group, Virtual Network, & Virtual Machines created (via previous project) 
+- 🔧 Have a Resource Group, Virtual Network, & Virtual Machines created (via previous project)
+- ✅ Completed The Creation Of Azure Network Environment  (Previous Project) 
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
