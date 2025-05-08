@@ -151,41 +151,4 @@ Open **Group Policy Management** on the Domain Controller.
 <img src="https://imgur.com/7wRJ9c6.png" height="85%" width="90%" alt="IT-ADMIN GP">
 </p>
 
-<br>
-
-# 🚀 Network Drive Mapping via Logon Script
->📌 *Why?* Automatically maps shared drives for users at login, ensuring consistent and easy access to network resources.
-
-### Step 1️⃣: Create Shared Network Folder
-1. On Domain Controller go to **C:** on File Explorer → Create new folder & rename.
-2. Right-click folder → **Properties** → **Sharing** tab → **Advanced Sharing...**.
-3. Check ✅ **"Share this folder"**.
-4. **Permissions**:
-  - **Authenticated Users**: Full Control (if needed)
-  - **Administrators**: Full Control
- The folder can now be accessed this way: (\\DOMAIN HERE\FOLDER NAME HERE)
-
-<br>
-
-### Step 2️⃣: Create Logon Script
-1. Open **Notepad**, paste:
-  net use G: \\DOMAIN HERE\FOLDER NAME HERE /persistent:yes
-2. Save this as map-drive.bat & save it in this path: (\\DOMAIN HERE\NETLOGON)
-
-<br>
-
-### Step 3️⃣: Assign Script via Group Policy
-1. Open GPMC → Expand domain → Right-click an OU (has a group and user assigned to it) → Edit.
-2. Navigate to:
-  User Configuration → Policies → Windows Settings → Scripts (Logon/Logoff) → Logon
-3. Double-click **Logon** → Click **Add** → Browse and type in the **NETLOGON** path from earlier.
-4. Select map-drive.bat & apply 
-
-<br>
-
-### Step 4️⃣: Apply and Test
-1. On a domain-joined PC, open cmd and type:
-   gpupdate /force
-2. Log out/in as a domain user.
-3. Open **File Explorer** → G: drive should appear.
 
