@@ -27,9 +27,6 @@
 - 🔹 Creating Organizational Units to organize users and computers
 - 🔹 Creating Security Groups within department OUs
 - 🔹 Enforcing department-specific GPOs to manage permissions like RDP, local logon rights & Password Policies
-- 🔹 Confirming GPO enforcement by testing user restrictions
-- 🔹 Creating a logon script to map the shared folder as a network drive
-- 🔹 Testing to confirm the applied Policies
 
 ---
 
