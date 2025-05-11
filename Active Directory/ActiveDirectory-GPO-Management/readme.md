@@ -55,8 +55,7 @@
 2. Right-click inside the OU → Click **New** → Select **Group** & name the group (for example, **IT-Admins**).
 3. Set **Group scope** to **Global** and **Group type** to **Security**.
 4. Click **OK** to create the group.
-5. Create groups for each respectiv OU.
-   (*create more groups for each department*)
+   (*create more groups for each department OU*)
 
 
 <br>
