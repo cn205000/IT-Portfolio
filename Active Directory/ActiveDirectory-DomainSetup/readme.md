@@ -45,7 +45,43 @@
 <br>
 <br>
 
-## Step 2️⃣: Configuring the Domain Controller (DC)
+## Step 2️⃣: Disable Firewall on DC (for testing/ping)
+
+>📌 *Why?* Disabling the firewall allows easier network testing, like pings during setup (not recommended for production).
+
+1. Open Run in Windows search, type wf.msc, and press Enter.
+2. Click **Windows Firewall Properties** (top of the left panel).
+3. For **Domain, Private, and Public Profiles**, set **Firewall State** to **Off**.
+4. Click **Apply** and **OK**.
+5. Open Azure & navigate to your **Domain Controller**. Restart the VM to ensure the Firewall settings have been set.
+
+<p>
+<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="Firewall">
+</p>
+
+<br>
+<br>
+
+## Step 3️⃣: Test Connection from Client VM
+
+>📌 *Why?* Verifying DNS and ping ensures the Client VM can communicate with the DC before trying to join the domain.
+
+
+1. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
+2. Open **PowerShell** and run:  
+   ping <DC_Private_IP> (We should see that all packets were sent and received).
+3. Run:  
+   ipconfig /all
+ (Look for "DNS Server"; it should be linked to the DC's private IP)
+
+
+<p>
+<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Command Prompt">
+</p>
+
+<br>
+
+## Step 4️⃣: Configuring the Domain Controller (DC)
 
 >📌 *Why?* This turns the server into a Domain Controller, which manages users, computers, and domain security for the network.
 
@@ -61,43 +97,6 @@
  
 <p>
 <img src="https://imgur.com/HyyWl3h.png" height="85%" width="85%" alt="Server Manager">
-</p>
-
-<br>
-<br>
-
-## Step 3️⃣: Disable Firewall on DC (for testing/ping)
-
->📌 *Why?* Disabling the firewall allows easier network testing, like pings during setup (not recommended for production).
-
-1. Open Run in Windows search, type wf.msc, and press Enter.
-2. Click **Windows Firewall Properties** (top of the left panel).
-3. For **Domain, Private, and Public Profiles**, set **Firewall State** to **Off**.
-4. Click **Apply** and **OK**.
-
-<p>
-<img src="https://imgur.com/Nl9jiWR.png" height="80%" width="80%" alt="Firewall">
-</p>
-
-<br>
-<br>
-
-## Step 4️⃣: Test Connection from Client VM
-
->📌 *Why?* Verifying DNS and ping ensures the Client VM can communicate with the DC before trying to join the domain.
-
-
-1. Open Azure & navigate to your **Domain Controller**. Restart the VM to ensure the Firewall settings have been set.
-2. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
-3. Open **PowerShell** and run:  
-   ping <DC_Private_IP> (We should see that all packets were sent and received).
-4. Run:  
-   ipconfig /all
- (Look for "DNS Server"; it should be linked to the DC's private IP)
-
-
-<p>
-<img src="https://imgur.com/nx5nKxs.png" height="40%" width="70%" alt="Command Prompt">
 </p>
 
 <br>
