@@ -21,7 +21,7 @@
 - 🔹 Configuring **Service Level Agreements (SLAs)** for support ticket response standards  
 - 🔹 Adding **Users** and structuring access control
 
-## 3️⃣ [**osTicket Ticket Cycle**](https://github.com/cn205000/IT-Portfolio/tree/main/osTicket/osTicket-TicketCycle) *(Click to View)*  
+## 3️⃣ [**osTicket Ticket Cycle**](https://github.com/cn205000/IT-Portfolio/blob/main/OSTicket/Using-OSTicket/readme.md) *(Click to View)*  
 - 🔹 Submitting a ticket as an **End-User**  
 - 🔹 Assigning and prioritizing the ticket as a **Support Agent**  
 - 🔹 Simulating ticket **resolution and workflow** across multiple roles and teams  
