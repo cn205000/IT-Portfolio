@@ -25,7 +25,7 @@
 
   ## 🎥 Video Demonstration
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- ### In Progress...
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
