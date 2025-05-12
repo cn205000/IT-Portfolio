@@ -11,14 +11,14 @@
 ## 📌 Prerequisites
 - 🔐 Microsoft Azure Account (Free or Paid)
 - 🌐 Internet connection
-- 🧠 Basic understanding of networking concepts (IP, DNS, domain vs workgroup)
+- 🧠 Basic understanding of networking concepts
   
 ## 🔗 Enviroments & Technologies Used 
 -  **Microsoft Azure**
 
-## 🎥 Video Demonstration
+# 🎥 Video Demonstration
 
-- ### In Progress...
+- ## [Video Tutorial](https://vimeo.com/1083702501/8718ff6646?share=copy)
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
