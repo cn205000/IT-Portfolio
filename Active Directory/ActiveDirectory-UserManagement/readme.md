@@ -20,9 +20,9 @@
 -  Remote Desktop Protocol
 -  Active Directory Users and Computers (ADUC)
 
-  ## 🎥 Video Demonstration
+  # 🎥 Video Demonstration
 
-- ### In Progress...
+- ## [Video Tutorial](https://vimeo.com/1083699756/57568adcdf?share=copy)
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
