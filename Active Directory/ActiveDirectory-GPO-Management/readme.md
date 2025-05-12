@@ -12,8 +12,7 @@
 - 📡**Remote Desktop Protocol (RDP)**
 - ✅ Completed The Active Directory User Management (Previous Project)
 - 🧠 **Basic understanding of:**
-  - Organizational Units (OUs)
-  - Group Policies
+  - Active Directory 
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
