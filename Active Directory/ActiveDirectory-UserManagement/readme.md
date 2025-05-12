@@ -5,6 +5,7 @@
 - Create Users
 - Configure User Privileges
 - Manage User Accounts
+- Confirm New User Login
 
 ## 📌 Prerequisites
 - 🖥️ **Windows Server VM** promoted as a Domain Controller (DC)
