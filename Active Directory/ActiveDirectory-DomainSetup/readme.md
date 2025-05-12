@@ -11,7 +11,7 @@
 - 🌐 Internet connection
 - 💻 Windows Machine with Remote Desktop Protocol (RDP) installed (most have it by default)
 - 🔐 Microsoft Azure Account (Free or Paid)
-- ✅ Completed The Creation Of Azure Network Environment  (Previous Project) 
+- ✅ Completed the Set Up of a Domain Environment in Azure (Previous Project) 
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
