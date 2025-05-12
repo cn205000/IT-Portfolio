@@ -12,11 +12,6 @@
 - 💼 **Active Directory Domain Services (AD DS)** installed and configured
 - 📡**Remote Desktop Protocol (RDP)**
 - ✅ Completed The Configuring of a Domain Controller & Active Directory (Previous Project)
-- 🧠 **Basic understanding of:**
-  - Organizational Units (OUs)
-  - Group Policy
-  - Domain vs. Local accounts
-
     
 ## 🔗 Enviroments & Technologies Used 
 -  Microsoft Azure
