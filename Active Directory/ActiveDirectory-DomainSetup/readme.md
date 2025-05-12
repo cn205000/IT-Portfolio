@@ -68,7 +68,7 @@
 
 
 1. RDP into your **Client VM**. (We are not using domain login yet as this client hasn't joined the domain yet).
-2. Open **PowerShell** and run:  
+2. Open **Command Prompt** and run:  
    ping <DC_Private_IP> (We should see that all packets were sent and received).
 3. Run:  
    ipconfig /all
