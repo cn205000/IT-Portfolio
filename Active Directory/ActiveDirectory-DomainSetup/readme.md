@@ -21,9 +21,9 @@
 -  Command Prompt
 -  Windows Server Manager
 
-  ## 🎥 Video Demonstration
+  # 🎥 Video Demonstration
 
-- ### In Progress...
+- ## [Video Tutorial](https://vimeo.com/1083737911/4822434906?share=copy)
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
@@ -104,7 +104,7 @@
 
 >📌 *Why?* Joining the domain connects the client to the centralized management system handled by the Domain Controller.
 
-1. Restart the **Client VM** then open **System Properties** (type 'Run' then sysdm.cpl).
+1. Restart the **Client VM** then connect & open **System Properties** (type 'Run' then sysdm.cpl).
 2. Click **Change**, select **Domain**, and enter the domain name you set earlier (e.g., mydomain.com).
 3. When prompted, enter **Domain Admin credentials** (the ones set during DC configuration).
 4. After confirmation, **restart the Client VM**.
