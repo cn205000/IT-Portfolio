@@ -25,7 +25,7 @@
 
 # 🎥 Video Demonstration
 
-- ## [Video Tutorial](https://vimeo.com/1084040215/bfe15f16ea?share=copy)
+- ## [Video Tutorial](https://youtu.be/Ji-L0qpi9ug)
 
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
