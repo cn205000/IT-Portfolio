@@ -18,9 +18,9 @@
 - **Windows 10 Pro VM**  
 - **Ubuntu Server 22.04 VM**  
 
-## 🎥 Video Demonstration
+# 🎥 Video Demonstration
 
-- ### In Progress...
+- ## [Video Tutorial](https://vimeo.com/1084040215/bfe15f16ea?share=copy)
   
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
