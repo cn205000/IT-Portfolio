@@ -20,7 +20,7 @@
 
 # 🎥 Video Demonstration
 
-- ## [Video Tutorial](https://vimeo.com/1084040215/bfe15f16ea?share=copy)
+- ## [Video Tutorial](https://vimeo.com/1084042144/0d7b4d0b45?share=copy)
   
 <h1> ⚙️ Project Steps ⚙️ </h1>
 
