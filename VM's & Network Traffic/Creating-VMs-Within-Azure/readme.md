@@ -48,8 +48,9 @@
    - Pick the same **Region** for the **previously created Resource Group**.
    - Choose **Windows 10 Pro** for the image.  
 3. In the **Networking** tab:  
-   - Note the **Virtual Network (VNET)** and **Subnet** that's automatically created.  
+   - Create new **Virtual Network** & name it. 
 4. Complete the configuration and click **Review + Create** → **Create**.
+   (Wait for the VNET to be created before next step.)
 
 <p>
 <img src="https://imgur.com/HFnUwht.png" height="40%" width="40%" alt="Windows Creation">
@@ -68,7 +69,7 @@
    - Choose **Ubuntu Server 22.04 LTS x64** for the image.  
    - Set **Authentication type** to **Username/Password**.  
 3. In the **Networking** tab:  
-   - Select the **same Virtual Network and Subnet** used by the Windows VM.  
+   - Select the **same Virtual Network** used by the Windows VM.  
 4. Complete the configuration and click **Review + Create** → **Create**.
 
 <p>
